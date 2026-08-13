@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import "tailwindcss";
+
+/* ============================================
+   SNAPTOOLS — DESIGN SYSTEM
+   Dark Premium Theme — Inspired by emploisdubai.com
+   Version: 3.0
+   ============================================ */
+
+:root {
+  /* Backgrounds */
+  --bg-base:    #0a0a0a;
+  --bg-surface: #111111;
+  --bg-elevated:#1a1a1a;
+
+  /* Text */
+  --text-primary:   #e0e0e0;
+  --text-secondary: rgba(224,224,224,0.65);
+  --text-muted:     rgba(224,224,224,0.35);
+
+  /* Brand accent — gold luxury from emploisdubai */
+  --accent:       #c9a96e;
+  --accent-light: #d4b97a;
+  --accent-dim:   rgba(201,169,110,0.15);
+
+  /* Cluster accents (kept for tool cards) */
+  --accent-daily:        hsl(210,80%,60%);
+  --accent-media:        hsl(270,60%,65%);
+  --accent-productivity: hsl(170,55%,48%);
+  --accent-devsec:       hsl(145,75%,48%);
+  --accent-lifestyle:    hsl(25,85%,58%);
+
+  /* Glass */
+  --glass-bg:     rgba(255,255,255,0.03);
+  --glass-border: rgba(255,255,255,0.07);
+  --glass-shadow: 0 8px 40px rgba(0,0,0,0.45);
+
+  /* Borders */
+  --border-subtle: rgba(255,255,255,0.06);
+
+  /* Radius */
+  --radius-sm: 0.5rem;
+  --radius-md: 0.75rem;
+  --radius-lg: 1rem;
+  --radius-xl: 1.5rem;
+
+  /* Fonts */
+  --font-serif: "Playfair Display", Georgia, "Times New Roman", serif;
+  --font-sans:  Inter, -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+}
+
+/* ============================================
+   KEYFRAMES
+   ============================================ */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translate3d(0, 28px, 0); }
+  to   { opacity: 1; transform: translate3d(0, 0, 0);    }
+}
+
+@keyframes shimmer {
+  0%, 100% { opacity: 0.4; }
+  50%       { opacity: 1;   }
+}
+
+@keyframes pulseGlow {
+  0%, 100% { box-shadow: 0 0 20px rgba(201,169,110,0.15); }
+  50%       { box-shadow: 0 0 40px rgba(201,169,110,0.35); }
+}
+
+/* ============================================
+   RESET & BASE
+   ============================================ */
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--bg-base);
+  color: var(--text-primary);
+  overflow-x: hidden;
+  line-height: 1.7;
+  min-height: 100vh;
+}
+
+/* ============================================
+   TYPOGRAPHY
+   ============================================ */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-serif);
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.3s ease;
+}
+
+::selection {
+  background-color: rgba(201,169,110,0.3);
+  color: #ffffff;
+}
+
+/* ============================================
+   CUSTOM SCROLLBAR
+   ============================================ */
+@media (pointer: fine) {
+  ::-webkit-scrollbar        { width: 8px; height: 8px; }
+  ::-webkit-scrollbar-track  { background: var(--bg-base); }
+  ::-webkit-scrollbar-thumb  {
+    background: rgba(201,169,110,0.35);
+    border-radius: 4px;
+    transition: background 0.2s ease;
+  }
+  ::-webkit-scrollbar-thumb:hover { background: rgba(201,169,110,0.6); }
+  *                               { scrollbar-width: thin; scrollbar-color: rgba(201,169,110,0.35) var(--bg-base); }
+}
+
+/* ============================================
+   GLASS NAVBAR
+   ============================================ */
+.glass-navbar {
+  background: rgba(10,10,10,0.65);
+  backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+  transition: all 0.3s ease;
+}
+.glass-navbar-scrolled {
+  background: rgba(10,10,10,0.88);
+  backdrop-filter: blur(30px) saturate(200%);
+  -webkit-backdrop-filter: blur(30px) saturate(200%);
+  border-bottom: 1px solid rgba(201,169,110,0.12);
+  box-shadow: 0 4px 30px rgba(0,0,0,0.4);
+}
+
+/* ============================================
+   CTA BUTTON
+   ============================================ */
+.cta-button {
+  position: relative;
+  overflow: hidden;
+  transition: all 0.35s cubic-bezier(0.25,0.46,0.45,0.94);
+  cursor: pointer;
+}
+.cta-button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.12), transparent);
+  transition: left 0.55s ease;
+  pointer-events: none;
+}
+.cta-button:hover::before { left: 100%; }
+.cta-button:hover          { transform: translateY(-2px); }
+.cta-button:active         { transform: translateY(1px); }
+
+/* ============================================
+   NAV LINK
+   ============================================ */
+.nav-link {
+  position: relative;
+  color: var(--text-secondary);
+  transition: color 0.3s ease;
+  padding: 0.5rem 0;
+}
+.nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--accent);
+  transition: width 0.3s cubic-bezier(0.25,0.46,0.45,0.94);
+}
+.nav-link:hover,
+.nav-link:focus-visible { color: var(--accent-light); }
+.nav-link:hover::after,
+.nav-link:focus-visible::after { width: 100%; }
+
+/* ============================================
+   SEPARATOR
+   ============================================ */
+.accent-separator {
+  width: 48px;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--accent), transparent);
+  border: none;
+  margin: 1rem auto;
+}
+
+/* ============================================
+   UTILITIES
+   ============================================ */
+.container-main {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .container-main { padding: 0 1rem; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ============================================
+   TOOL PAGE CONTENT
+   ============================================ */
+.tool-page-wrapper {
+  min-height: calc(100vh - 80px);
+  padding: 6rem 1rem 4rem;
+  max-width: 900px;
+  margin: 0 auto;
+}

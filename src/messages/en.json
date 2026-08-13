@@ -1,0 +1,845 @@
+{
+  "common": {
+    "brand": "SnapTools",
+    "tagline": "Fast, simple, and free online tools.",
+    "home": "Home",
+    "tools": "Tools",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "allTools": "All Tools",
+    "madeBy": "Part of the SnapTools network, built by Ethical Hacker Prep",
+    "switchLocale": "Switch language",
+    "copySuccess": "Copied!",
+    "loading": "Loading...",
+    "error": "An error occurred",
+    "tryAgain": "Try again"
+  },
+  "hub": {
+    "title": "Welcome to SnapTools",
+    "description": "Your go-to hub for everyday utilities.",
+    "heroTitle": "Tools for everything.",
+    "heroSubtitle": "Fast, ad-free utilities for developers, students, and everyday tasks."
+  },
+  "cta": {
+    "tier1": {
+      "title": "Think like an attacker. Defend like a pro.",
+      "description": "You just generated a password. Do you know how attackers actually try to crack them? Ethical Hacker Prep teaches you to think offensively so you can defend better.",
+      "button": "Start Free →"
+    },
+    "tier2": {
+      "description": "Built and maintained by the team behind Ethical Hacker Prep.",
+      "button": "Learn more"
+    },
+    "tier3": {
+      "description": "A SnapTools project"
+    },
+    "dismiss": "Dismiss"
+  },
+  "tools": {
+    "weather": {
+      "searchPlaceholder": "Enter city name...",
+      "searchButton": "Search",
+      "temperature": "Temperature",
+      "humidity": "Humidity",
+      "wind": "Wind",
+      "visibility": "Visibility"
+    },
+    "time": {
+      "addCity": "Add City",
+      "localTime": "Local Time",
+      "timeDifference": "Time Difference",
+      "meetingPlanner": "Meeting Planner"
+    },
+    "calc": {
+      "clear": "Clear",
+      "calculate": "Calculate",
+      "error": "Math Error"
+    },
+    "holidays": {
+      "selectCountry": "Select Country",
+      "selectYear": "Select Year",
+      "date": "Date",
+      "holidayName": "Holiday Name"
+    },
+    "json": {
+      "inputPlaceholder": "Paste your JSON here...",
+      "format": "Format JSON",
+      "minify": "Minify",
+      "valid": "Valid JSON",
+      "invalid": "Invalid JSON"
+    },
+    "password": {
+      "length": "Password Length",
+      "uppercase": "Include Uppercase",
+      "lowercase": "Include Lowercase",
+      "numbers": "Include Numbers",
+      "symbols": "Include Symbols",
+      "generate": "Generate Password",
+      "copy": "Copy Password",
+      "strength": {
+        "weak": "Weak",
+        "medium": "Medium",
+        "strong": "Strong"
+      }
+    },
+    "encode": {
+      "inputPlaceholder": "Enter text to encode or decode...",
+      "encodeBase64": "Encode Base64",
+      "decodeBase64": "Decode Base64",
+      "encodeUrl": "Encode URL",
+      "decodeUrl": "Decode URL"
+    },
+    "ip": {
+      "yourIp": "Your IP Address",
+      "isp": "ISP",
+      "location": "Location",
+      "asn": "ASN",
+      "refresh": "Refresh"
+    },
+    "qr": {
+      "inputPlaceholder": "Enter URL or text...",
+      "generate": "Generate QR",
+      "downloadPng": "Download PNG",
+      "downloadSvg": "Download SVG"
+    },
+    "regex": {
+      "patternPlaceholder": "Enter RegEx pattern...",
+      "flagsPlaceholder": "Flags (e.g., gm)",
+      "testStringPlaceholder": "Enter test string here...",
+      "matches": "Matches",
+      "noMatches": "No matches found"
+    },
+    "color": {
+      "hexPlaceholder": "Enter HEX or RGB...",
+      "pick": "Pick Color",
+      "copyHex": "Copy HEX",
+      "copyRgb": "Copy RGB"
+    },
+    "uuid": {
+      "generate": "Generate UUID",
+      "quantity": "Quantity",
+      "copyAll": "Copy All"
+    },
+    "placeholder": {
+      "width": "Width",
+      "height": "Height",
+      "text": "Display Text",
+      "bgColor": "Background Color",
+      "textColor": "Text Color",
+      "generate": "Generate Image"
+    },
+    "words": {
+      "inputPlaceholder": "Type or paste your text here...",
+      "words": "Words",
+      "characters": "Characters",
+      "sentences": "Sentences",
+      "paragraphs": "Paragraphs"
+    },
+    "lorem": {
+      "paragraphs": "Paragraphs",
+      "sentences": "Sentences",
+      "words": "Words",
+      "generate": "Generate Text",
+      "copy": "Copy Text"
+    },
+    "random": {
+      "min": "Min",
+      "max": "Max",
+      "generateNumber": "Generate Number",
+      "listPlaceholder": "Enter items separated by newlines...",
+      "pickItem": "Pick Random Item"
+    },
+    "stopwatch": {
+      "start": "Start",
+      "stop": "Stop",
+      "reset": "Reset",
+      "lap": "Lap"
+    },
+    "avatar": {
+      "style": "Avatar Style",
+      "generate": "Generate Avatar",
+      "download": "Download"
+    },
+    "compress": {
+      "dropzoneText": "Drag & drop images here or click to select",
+      "compressing": "Compressing...",
+      "originalSize": "Original",
+      "compressedSize": "Compressed",
+      "download": "Download Optimized Image"
+    },
+    "health": {
+      "height": "Height (cm)",
+      "weight": "Weight (kg)",
+      "age": "Age",
+      "gender": "Gender",
+      "calculate": "Calculate BMI"
+    },
+    "hash": {
+      "inputPlaceholder": "Enter text to hash or compute digest...",
+      "algorithm": "Algorithm",
+      "outputFormat": "Output Format",
+      "hexUppercase": "Uppercase HEX",
+      "hexLowercase": "Lowercase HEX",
+      "copyHash": "Copy Hash",
+      "copyAll": "Copy All Hashes",
+      "generatedHashes": "Generated Hashes",
+      "sha256": "SHA-256",
+      "sha512": "SHA-512",
+      "sha1": "SHA-1",
+      "sha384": "SHA-384",
+      "md5": "MD5",
+      "characterCount": "Characters"
+    },
+    "diff": {
+      "originalPlaceholder": "Paste original text or code here...",
+      "modifiedPlaceholder": "Paste modified text or code here...",
+      "originalLabel": "Original Text",
+      "modifiedLabel": "Modified Text",
+      "splitView": "Split View",
+      "unifiedView": "Unified View",
+      "ignoreWhitespace": "Ignore Whitespace",
+      "clear": "Clear All",
+      "swap": "Swap Texts",
+      "noDifferences": "No differences found — both texts are identical.",
+      "differencesFound": "Differences detected",
+      "additions": "Additions",
+      "deletions": "Deletions",
+      "unchanged": "Unchanged"
+    },
+    "csv2json": {
+      "csvPlaceholder": "id,name,role,active\n1,Alice,Developer,true\n2,Bob,Designer,false",
+      "jsonPlaceholder": "JSON output will appear here...",
+      "csvLabel": "CSV Input",
+      "jsonLabel": "JSON Output",
+      "convert": "Convert to JSON",
+      "delimiter": "Delimiter",
+      "comma": "Comma (,)",
+      "semicolon": "Semicolon (;)",
+      "tab": "Tab (\\t)",
+      "pipe": "Pipe (|)",
+      "hasHeader": "First row is header",
+      "parseNumbers": "Parse numbers & booleans",
+      "indentation": "Indentation",
+      "twoSpaces": "2 Spaces",
+      "fourSpaces": "4 Spaces",
+      "minified": "Minified",
+      "copyJson": "Copy JSON",
+      "downloadJson": "Download .json",
+      "clear": "Clear",
+      "rowsConverted": "rows converted"
+    },
+    "dns": {
+      "domainPlaceholder": "example.com",
+      "lookupButton": "Lookup DNS",
+      "recordType": "Record Type",
+      "allTypes": "All Records (ANY)",
+      "searching": "Querying DNS servers...",
+      "results": "DNS Records",
+      "noRecords": "No DNS records found for this query.",
+      "type": "Type",
+      "name": "Name",
+      "value": "Value / Target",
+      "ttl": "TTL",
+      "copyRecord": "Copy Record",
+      "error": "Failed to resolve DNS records. Please check the domain name."
+    },
+    "markdown": {
+      "editorPlaceholder": "# Welcome to Markdown Editor\n\nStart writing in **Markdown** and see the preview live on the right!\n\n- Real-time preview\n- Clean HTML export\n- Syntax highlighting\n\n```javascript\nconsole.log('Hello, SnapTools!');\n```",
+      "editorTab": "Editor",
+      "previewTab": "Preview",
+      "splitTab": "Split View",
+      "copyHtml": "Copy HTML",
+      "copyMarkdown": "Copy Markdown",
+      "downloadHtml": "Download HTML",
+      "downloadMd": "Download .md",
+      "clear": "Clear",
+      "words": "Words",
+      "characters": "Characters",
+      "lines": "Lines"
+    },
+    "margin": {
+      "costPrice": "Cost Price",
+      "sellingPrice": "Selling Price / Revenue",
+      "grossProfit": "Gross Profit",
+      "profitMargin": "Profit Margin (on Revenue)",
+      "markup": "Markup (on Cost)",
+      "costPlaceholder": "e.g. 50.00",
+      "revenuePlaceholder": "e.g. 100.00",
+      "marginPlaceholder": "e.g. 50.0",
+      "markupPlaceholder": "e.g. 100.0",
+      "calculate": "Calculate",
+      "reset": "Reset",
+      "currency": "Currency",
+      "formulaExplanation": "Margin = (Profit / Revenue) × 100 | Markup = (Profit / Cost) × 100"
+    },
+    "pomodoro": {
+      "focus": "Focus Time",
+      "shortBreak": "Short Break",
+      "longBreak": "Long Break",
+      "start": "Start",
+      "pause": "Pause",
+      "reset": "Reset",
+      "skip": "Skip to Next",
+      "session": "Session",
+      "of": "of",
+      "completedToday": "Pomodoros completed today",
+      "soundNotification": "Sound Alert",
+      "autoStartBreaks": "Auto-start breaks",
+      "workDuration": "Work Duration (min)",
+      "shortBreakDuration": "Short Break (min)",
+      "longBreakDuration": "Long Break (min)"
+    },
+    "username": {
+      "theme": "Theme / Style",
+      "allThemes": "All Styles",
+      "gaming": "Gaming & Esports",
+      "aesthetic": "Aesthetic & Minimal",
+      "tech": "Tech & Cyberpunk",
+      "fantasy": "Fantasy & RPG",
+      "funny": "Funny & Quirky",
+      "includeNumbers": "Include Numbers",
+      "prefix": "Prefix (optional)",
+      "suffix": "Suffix (optional)",
+      "generate": "Generate Usernames",
+      "copy": "Copy",
+      "copyAll": "Copy All",
+      "generatedCount": "Usernames Generated",
+      "favorite": "Favorite"
+    },
+    "anagram": {
+      "inputPlaceholder": "Enter letters or words (e.g. scrabble, listen, master)...",
+      "solveButton": "Solve Anagrams",
+      "minLength": "Min Length",
+      "filterByLength": "Filter by Length",
+      "allLengths": "All Lengths",
+      "sortBy": "Sort By",
+      "sortByLength": "Word Length (Desc)",
+      "sortByPoints": "Scrabble Points",
+      "sortByAlpha": "Alphabetical",
+      "searching": "Finding valid words...",
+      "resultsCount": "words found",
+      "noResults": "No valid anagrams found for these letters.",
+      "points": "pts",
+      "letters": "letters",
+      "wildcardTip": "Tip: Use ? for blank/wildcard tiles"
+    },
+    "thumbnail": {
+      "urlPlaceholder": "Paste YouTube URL (e.g. https://www.youtube.com/watch?v=dQw4w9WgXcQ)...",
+      "fetchButton": "Get Thumbnails",
+      "preview": "Thumbnail Preview",
+      "resolutions": "Available Resolutions",
+      "maxRes": "Maximum Resolution (HD 1080p / 4K)",
+      "highRes": "High Quality (HQ 720p / 480p)",
+      "mediumRes": "Medium Quality (MQ 360p)",
+      "standardRes": "Standard Definition (SD 480p)",
+      "download": "Download Image",
+      "copyLink": "Copy Image URL",
+      "invalidUrl": "Please enter a valid YouTube video URL.",
+      "loading": "Fetching thumbnail resolutions..."
+    },
+    "jwt": {
+      "inputPlaceholder": "Paste your JWT here...",
+      "decodeBtn": "Decode JWT",
+      "headerLabel": "Header (Algorithm & Token Type)",
+      "payloadLabel": "Payload (Data & Claims)",
+      "signatureLabel": "Signature",
+      "invalidToken": "Invalid JWT format. Ensure it has 3 parts separated by dots.",
+      "copied": "Copied to clipboard"
+    },
+    "url": {
+      "inputPlaceholder": "Enter URL to parse...",
+      "parseBtn": "Parse URL",
+      "protocol": "Protocol",
+      "host": "Host",
+      "port": "Port",
+      "path": "Path",
+      "query": "Query Parameters",
+      "hash": "Hash",
+      "encodeBtn": "URL Encode",
+      "decodeBtn": "URL Decode"
+    },
+    "chmod": {
+      "octalLabel": "Octal Notation",
+      "symbolicLabel": "Symbolic Notation",
+      "owner": "Owner",
+      "group": "Group",
+      "public": "Public",
+      "read": "Read",
+      "write": "Write",
+      "execute": "Execute",
+      "commandPreview": "Linux Command Preview"
+    },
+    "meta": {
+      "titleLabel": "Page Title",
+      "descLabel": "Page Description",
+      "keywordsLabel": "Keywords (comma separated)",
+      "imageLabel": "Preview Image URL",
+      "generateBtn": "Generate Meta Tags",
+      "codeLabel": "HTML <head> Tags",
+      "copyCode": "Copy HTML Code"
+    },
+    "loan": {
+      "amountLabel": "Loan Amount",
+      "rateLabel": "Interest Rate (%)",
+      "termLabel": "Loan Term (Years)",
+      "calcBtn": "Calculate Monthly EMI",
+      "monthlyPay": "Monthly Payment (EMI)",
+      "totalInterest": "Total Interest",
+      "totalAmount": "Total Amount to Pay"
+    },
+    "discount": {
+      "priceLabel": "Original Price",
+      "discountLabel": "Discount Percentage (%)",
+      "calcBtn": "Calculate Final Price",
+      "savedAmount": "You Save",
+      "finalPrice": "Final Sale Price"
+    },
+    "age": {
+      "dobLabel": "Date of Birth",
+      "calcBtn": "Calculate Exact Age",
+      "resultYears": "Years",
+      "resultMonths": "Months",
+      "resultDays": "Days",
+      "summary": "You are exactly:"
+    },
+    "case": {
+      "inputPlaceholder": "Type or paste your text here to convert its case...",
+      "upper": "UPPERCASE",
+      "lower": "lowercase",
+      "title": "Title Case",
+      "camel": "camelCase",
+      "snake": "snake_case",
+      "kebab": "kebab-case",
+      "copyResult": "Copy Result"
+    },
+    "ratio": {
+      "width": "Width (px)",
+      "height": "Height (px)",
+      "targetRatio": "Target Aspect Ratio",
+      "calcBtn": "Calculate Missing Dimension",
+      "result": "Calculated Dimension"
+    },
+    "bpm": {
+      "tapBtn": "TAP HERE",
+      "bpmValue": "BPM",
+      "resetBtn": "Reset",
+      "instruction": "Tap the button or press Spacebar to the beat of the music"
+    },
+    "xml": {
+      "format": "Format XML",
+      "inputPlaceholder": "Paste XML here...",
+      "invalidXml": "",
+      "title": "",
+      "placeholder": "",
+      "formatBtn": "",
+      "clearBtn": ""
+    },
+    "css": {
+      "minify": "Minify CSS",
+      "inputPlaceholder": "Paste CSS here...",
+      "title": "",
+      "placeholder": "",
+      "minifyBtn": "",
+      "clearBtn": ""
+    },
+    "base": {
+      "inputNumber": "Enter number...",
+      "fromBase": "From Base",
+      "toBase": "To Base",
+      "convert": "Convert",
+      "invalidInput": "",
+      "title": ""
+    },
+    "html-entities": {
+      "encode": "Encode",
+      "decode": "Decode",
+      "inputPlaceholder": "Enter text...",
+      "Error decoding entities": "",
+      "title": "",
+      "placeholder": "",
+      "encodeBtn": "",
+      "decodeBtn": ""
+    },
+    "percentage": {
+      "calculate": "Calculate",
+      "result": "Result",
+      "title": ""
+    },
+    "salary": {
+      "hourly": "Hourly",
+      "annual": "Annual",
+      "calculate": "Calculate",
+      "title": ""
+    },
+    "tip": {
+      "billAmount": "Bill Amount",
+      "tipPercentage": "Tip %",
+      "split": "Split by",
+      "total": "Total",
+      "title": ""
+    },
+    "timezone": {
+      "selectTimezone": "Select Timezone",
+      "convertedTime": "Converted Time",
+      "title": ""
+    },
+    "shuffle": {
+      "shuffleBtn": "Shuffle List",
+      "inputPlaceholder": "Enter items...",
+      "\\n": "",
+      "title": "",
+      "placeholder": "",
+      "copyBtn": ""
+    },
+    "remove-lines": {
+      "removeBtn": "Remove Lines",
+      "inputPlaceholder": "Enter text...",
+      "title": "",
+      "placeholder": "",
+      "removeBreaksBtn": "",
+      "removeEmptyBtn": "",
+      "copyBtn": ""
+    },
+    "pdf-merge": {
+      "selectFiles": "Select PDF Files",
+      "mergeBtn": "Merge PDFs",
+      "downloadBtn": "Download Merged PDF",
+      "dropzone": "Drag & drop PDFs here"
+    },
+    "pdf-split": {
+      "selectFiles": "Select PDF File",
+      "splitBtn": "Split PDF",
+      "pageRange": "Page Range (e.g., 1-3, 5)",
+      "downloadBtn": "Download Split PDF",
+      "dropzone": "Drag & drop PDF here"
+    },
+    "pdf-protect": {
+      "selectFiles": "Select PDF File",
+      "protectBtn": "Protect PDF",
+      "passwordPlaceholder": "Enter password",
+      "downloadBtn": "Download Protected PDF",
+      "dropzone": "Drag & drop PDF here"
+    },
+    "yt-downloader": {
+      "urlPlaceholder": "Paste YouTube URL here...",
+      "downloadBtn": "Download Video",
+      "quality": "Quality",
+      "format": "Format",
+      "processing": "Processing...",
+      "downloadReady": "Ready to Download"
+    },
+    "tiktok-downloader": {
+      "title": "TikTok Downloader"
+    },
+    "insta-downloader": {
+      "urlPlaceholder": "Paste Instagram URL here...",
+      "downloadBtn": "Download Media",
+      "pasteUrl": "Paste URL",
+      "processing": "Processing...",
+      "downloadReady": "Ready to Download"
+    },
+    "video-to-mp3": {
+      "title": "Video to MP3 Converter"
+    },
+    "img-converter": {
+      "selectImage": "Select Image",
+      "convertBtn": "Convert Image",
+      "outputFormat": "Output Format",
+      "dropzone": "Drag & drop image here"
+    },
+    "img-compressor": {
+      "selectImage": "Select Image",
+      "compressBtn": "Compress Image",
+      "qualitySlider": "Compression Level",
+      "dropzone": "Drag & drop image here"
+    },
+    "youtube-thumbnail": {
+      "urlPlaceholder": "Paste YouTube URL here...",
+      "downloadBtn": "Download Thumbnail",
+      "quality": "Thumbnail Quality",
+      "processing": "Fetching...",
+      "downloadReady": "Ready to Download"
+    },
+    "dns-lookup": {
+      "domainPlaceholder": "example.com",
+      "lookupBtn": "Lookup DNS",
+      "results": "DNS Records",
+      "recordType": "Record Type",
+      "loading": "Loading..."
+    },
+    "whois": {
+      "domainPlaceholder": "example.com",
+      "lookupBtn": "WHOIS Lookup",
+      "results": "WHOIS Data",
+      "recordType": "Data",
+      "loading": "Loading..."
+    },
+    "ssl-checker": {
+      "domainPlaceholder": "example.com",
+      "lookupBtn": "Check SSL",
+      "results": "SSL Details",
+      "recordType": "Detail",
+      "loading": "Loading..."
+    },
+    "headers-checker": {
+      "domainPlaceholder": "example.com",
+      "lookupBtn": "Check Headers",
+      "results": "HTTP Headers",
+      "recordType": "Header",
+      "loading": "Loading..."
+    },
+    "hash-generator": {
+      "inputPlaceholder": "Enter text to hash...",
+      "generateBtn": "Generate Hash",
+      "algorithm": "Algorithm",
+      "copyHash": "Copy Hash",
+      "identifyBtn": "Identify",
+      "hashType": "Hash Type"
+    },
+    "hash-identifier": {
+      "inputPlaceholder": "Enter hash to identify...",
+      "generateBtn": "Identify",
+      "algorithm": "Possible Algorithms",
+      "copyHash": "Copy Result",
+      "identifyBtn": "Identify",
+      "hashType": "Hash Type"
+    },
+    "mac-lookup": {
+      "macPlaceholder": "Enter MAC Address...",
+      "lookupBtn": "Lookup Vendor",
+      "portRange": "N/A",
+      "scanBtn": "N/A",
+      "targetPlaceholder": "N/A"
+    },
+    "port-scanner": {
+      "macPlaceholder": "N/A",
+      "lookupBtn": "N/A",
+      "portRange": "Port Range",
+      "scanBtn": "Scan Ports",
+      "targetPlaceholder": "Enter IP or Domain..."
+    },
+    "jwt-decoder": {
+      "tokenPlaceholder": "Paste JWT here...",
+      "decodeBtn": "Decode",
+      "header": "Header",
+      "payload": "Payload",
+      "signature": "Signature",
+      "expired": "Expired"
+    },
+    "subnet-calc": {
+      "ipPlaceholder": "IP Address (e.g., 192.168.1.1)",
+      "cidrLabel": "CIDR / Subnet",
+      "calculateBtn": "Calculate Subnet",
+      "networkAddress": "Network Address",
+      "broadcastAddress": "Broadcast Address",
+      "usableHosts": "Usable Hosts",
+      "subnetMask": "Subnet Mask"
+    },
+    "chmod-calc": {
+      "ownerLabel": "Owner",
+      "groupLabel": "Group",
+      "othersLabel": "Others",
+      "readLabel": "Read (4)",
+      "writeLabel": "Write (2)",
+      "executeLabel": "Execute (1)",
+      "numericValue": "Numeric Value",
+      "symbolicValue": "Symbolic Value"
+    },
+    "cron-parser": {
+      "expressionPlaceholder": "* * * * *",
+      "parseBtn": "Parse Cron",
+      "nextRuns": "Next Scheduled Runs",
+      "description": "Human Readable Description",
+      "buildBtn": "Build Cron"
+    },
+    "useragent-parser": {
+      "detectBtn": "Parse User Agent",
+      "browser": "Browser",
+      "os": "Operating System",
+      "device": "Device",
+      "parseBtn": "Parse"
+    },
+    "sql-formatter": {
+      "inputPlaceholder": "Paste SQL query...",
+      "formatBtn": "Format SQL",
+      "copyBtn": "Copy SQL",
+      "indentSize": "Indent Size"
+    },
+    "diff-checker": {
+      "originalLabel": "Original Text",
+      "modifiedLabel": "Modified Text",
+      "compareBtn": "Compare",
+      "additions": "Additions",
+      "deletions": "Deletions"
+    },
+    "merge-pdf": {
+      "selectFiles": "Select PDF Files",
+      "mergeBtn": "Merge PDFs",
+      "downloadBtn": "Download Merged PDF",
+      "dropzone": "Drag & drop PDFs here"
+    },
+    "split-pdf": {
+      "selectFiles": "Select PDF File",
+      "splitBtn": "Split PDF",
+      "pageRange": "Page Range (e.g., 1-3, 5)",
+      "downloadBtn": "Download Split PDF",
+      "dropzone": "Drag & drop PDF here"
+    },
+    "compress-pdf": {
+      "selectFiles": "Select PDF File",
+      "compressBtn": "Compress PDF",
+      "downloadBtn": "Download Compressed PDF",
+      "dropzone": "Drag & drop PDF here",
+      "qualitySlider": "Compression Level"
+    },
+    "pdf-to-jpg": {
+      "selectFiles": "Select PDF File",
+      "convertBtn": "Convert to JPG",
+      "downloadBtn": "Download JPG Images",
+      "dropzone": "Drag & drop PDF here"
+    },
+    "jpg-to-pdf": {
+      "selectFiles": "Select JPG Images",
+      "convertBtn": "Convert to PDF",
+      "downloadBtn": "Download PDF",
+      "dropzone": "Drag & drop JPGs here"
+    },
+    "protect-pdf": {
+      "selectFiles": "Select PDF File",
+      "protectBtn": "Protect PDF",
+      "passwordPlaceholder": "Enter password",
+      "downloadBtn": "Download Protected PDF",
+      "dropzone": "Drag & drop PDF here"
+    },
+    "unlock-pdf": {
+      "selectFiles": "Select Protected PDF",
+      "unlockBtn": "Unlock PDF",
+      "passwordPlaceholder": "Enter current password",
+      "downloadBtn": "Download Unlocked PDF",
+      "dropzone": "Drag & drop PDF here"
+    },
+    "youtube-downloader": {
+      "title": "YouTube Downloader"
+    },
+    "instagram-downloader": {
+      "title": "Instagram Downloader"
+    },
+    "twitter-downloader": {
+      "title": "Twitter Downloader"
+    },
+    "remove-background": {
+      "title": "Remove Background"
+    },
+    "image-compressor": {
+      "title": "Image Compressor"
+    },
+    "heic-to-jpg": {
+      "title": "HEIC to JPG"
+    },
+    "resize-image": {
+      "title": "Resize Image"
+    },
+    "crop-image": {
+      "title": "Crop Image"
+    },
+    "ico-converter": {
+      "title": "ICO Converter"
+    },
+    "grammar-checker": {
+      "title": "Grammar Checker"
+    },
+    "article-spinner": {
+      "title": "Article Spinner"
+    },
+    "text-to-speech": {
+      "title": "Text to Speech"
+    },
+    "speech-to-text": {
+      "title": "Speech to Text"
+    },
+    "plagiarism-checker": {
+      "title": "Plagiarism Checker"
+    },
+    "qr-scanner": {
+      "title": "QR Scanner"
+    },
+    "word-to-pdf": {
+      "title": "Word to PDF"
+    },
+    "watermark-pdf": {
+      "title": "Add Watermark to PDF",
+      "description": "Stamp an image or text over your PDF."
+    },
+    "page-numbers-pdf": {
+      "title": "Add PDF Page Numbers",
+      "description": "Insert page numbers into PDF document."
+    },
+    "rotate-pdf": {
+      "title": "Rotate PDF Pages",
+      "description": "Rotate your PDF pages online."
+    },
+    "organize-pdf": {
+      "title": "Organize PDF Pages",
+      "description": "Sort, add and delete PDF pages."
+    },
+    "html-to-pdf": {
+      "title": "HTML to PDF",
+      "description": "Convert webpages to PDF documents."
+    },
+    "blur-face": {
+      "title": "Blur Faces in Image",
+      "description": "Automatically detect and blur faces."
+    },
+    "meme-generator": {
+      "title": "Meme Generator",
+      "description": "Create custom memes from templates."
+    },
+    "favicon-generator": {
+      "title": "Favicon Generator",
+      "description": "Convert images to favicon.ico."
+    },
+    "image-resizer": {
+      "title": "Image Resizer",
+      "description": "Resize dimensions of any image."
+    },
+    "image-cropper": {
+      "title": "Image Cropper",
+      "description": "Crop images easily online."
+    },
+    "schema-generator": {
+      "title": "Schema JSON-LD Generator",
+      "description": "Create structured data for SEO."
+    },
+    "keyword-density": {
+      "title": "Keyword Density Checker",
+      "description": "Analyze text keyword density."
+    },
+    "robots-txt-generator": {
+      "title": "Robots.txt Generator",
+      "description": "Generate a robots.txt file."
+    },
+    "code-beautifier": {
+      "title": "Code Beautifier",
+      "description": "Format HTML, CSS, JS code."
+    },
+    "paraphrase-tool": {
+      "title": "Paraphrase Tool",
+      "description": "Rewrite text with synonyms."
+    },
+    "email-signature": {
+      "title": "Email Signature Generator",
+      "description": "Create professional email signatures."
+    },
+    "utm": {
+      "urlLabel": "",
+      "sourceLabel": "",
+      "mediumLabel": "",
+      "campaignLabel": "",
+      "termLabel": "",
+      "contentLabel": "",
+      "resultTitle": "",
+      "copied": "",
+      "copyBtn": ""
+    }
+  }
+}

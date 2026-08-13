@@ -1,0 +1,845 @@
+{
+  "common": {
+    "brand": "SnapTools",
+    "tagline": "Des outils en ligne rapides, simples et gratuits.",
+    "home": "Accueil",
+    "tools": "Outils",
+    "privacy": "Politique de confidentialité",
+    "terms": "Conditions d'utilisation",
+    "allTools": "Tous les outils",
+    "madeBy": "Fait partie du réseau SnapTools, propulsé par Ethical Hacker Prep",
+    "switchLocale": "Changer de langue",
+    "copySuccess": "Copié !",
+    "loading": "Chargement...",
+    "error": "Une erreur est survenue",
+    "tryAgain": "Réessayer"
+  },
+  "hub": {
+    "title": "Bienvenue sur SnapTools",
+    "description": "Votre portail pour les outils du quotidien.",
+    "heroTitle": "Des outils pour tout.",
+    "heroSubtitle": "Des utilitaires rapides et sans publicité pour les développeurs, les étudiants et les tâches courantes."
+  },
+  "cta": {
+    "tier1": {
+      "title": "Pensez comme un pirate. Défendez comme un pro.",
+      "description": "Vous venez de générer un mot de passe. Savez-vous comment les pirates tentent de les craquer ? Ethical Hacker Prep vous apprend la sécurité offensive pour mieux vous défendre.",
+      "button": "Commencer gratuitement →"
+    },
+    "tier2": {
+      "description": "Créé et maintenu par l'équipe d'Ethical Hacker Prep.",
+      "button": "En savoir plus"
+    },
+    "tier3": {
+      "description": "Un projet SnapTools"
+    },
+    "dismiss": "Fermer"
+  },
+  "tools": {
+    "weather": {
+      "searchPlaceholder": "Entrez le nom de la ville...",
+      "searchButton": "Rechercher",
+      "temperature": "Température",
+      "humidity": "Humidité",
+      "wind": "Vent",
+      "visibility": "Visibilité"
+    },
+    "time": {
+      "addCity": "Ajouter une ville",
+      "localTime": "Heure locale",
+      "timeDifference": "Décalage horaire",
+      "meetingPlanner": "Planificateur de réunion"
+    },
+    "calc": {
+      "clear": "Effacer",
+      "calculate": "Calculer",
+      "error": "Erreur de calcul"
+    },
+    "holidays": {
+      "selectCountry": "Sélectionner un pays",
+      "selectYear": "Sélectionner une année",
+      "date": "Date",
+      "holidayName": "Nom du jour férié"
+    },
+    "json": {
+      "inputPlaceholder": "Collez votre JSON ici...",
+      "format": "Formater JSON",
+      "minify": "Minifier",
+      "valid": "JSON valide",
+      "invalid": "JSON invalide"
+    },
+    "password": {
+      "length": "Longueur du mot de passe",
+      "uppercase": "Inclure majuscules",
+      "lowercase": "Inclure minuscules",
+      "numbers": "Inclure chiffres",
+      "symbols": "Inclure symboles",
+      "generate": "Générer",
+      "copy": "Copier",
+      "strength": {
+        "weak": "Faible",
+        "medium": "Moyen",
+        "strong": "Fort"
+      }
+    },
+    "encode": {
+      "inputPlaceholder": "Entrez le texte à encoder ou décoder...",
+      "encodeBase64": "Encoder Base64",
+      "decodeBase64": "Décoder Base64",
+      "encodeUrl": "Encoder URL",
+      "decodeUrl": "Décoder URL"
+    },
+    "ip": {
+      "yourIp": "Votre adresse IP",
+      "isp": "Fournisseur",
+      "location": "Localisation",
+      "asn": "ASN",
+      "refresh": "Actualiser"
+    },
+    "qr": {
+      "inputPlaceholder": "Entrez l'URL ou le texte...",
+      "generate": "Générer QR",
+      "downloadPng": "Télécharger PNG",
+      "downloadSvg": "Télécharger SVG"
+    },
+    "regex": {
+      "patternPlaceholder": "Entrez votre motif RegEx...",
+      "flagsPlaceholder": "Options (ex. gm)",
+      "testStringPlaceholder": "Entrez le texte de test ici...",
+      "matches": "Correspondances",
+      "noMatches": "Aucune correspondance"
+    },
+    "color": {
+      "hexPlaceholder": "Entrez HEX ou RGB...",
+      "pick": "Choisir une couleur",
+      "copyHex": "Copier HEX",
+      "copyRgb": "Copier RGB"
+    },
+    "uuid": {
+      "generate": "Générer UUID",
+      "quantity": "Quantité",
+      "copyAll": "Tout copier"
+    },
+    "placeholder": {
+      "width": "Largeur",
+      "height": "Hauteur",
+      "text": "Texte à afficher",
+      "bgColor": "Couleur de fond",
+      "textColor": "Couleur du texte",
+      "generate": "Générer l'image"
+    },
+    "words": {
+      "inputPlaceholder": "Tapez ou collez votre texte ici...",
+      "words": "Mots",
+      "characters": "Caractères",
+      "sentences": "Phrases",
+      "paragraphs": "Paragraphes"
+    },
+    "lorem": {
+      "paragraphs": "Paragraphes",
+      "sentences": "Phrases",
+      "words": "Mots",
+      "generate": "Générer du texte",
+      "copy": "Copier le texte"
+    },
+    "random": {
+      "min": "Min",
+      "max": "Max",
+      "generateNumber": "Générer un nombre",
+      "listPlaceholder": "Entrez les éléments séparés par des retours à la ligne...",
+      "pickItem": "Tirer au sort"
+    },
+    "stopwatch": {
+      "start": "Démarrer",
+      "stop": "Arrêter",
+      "reset": "Réinitialiser",
+      "lap": "Tour"
+    },
+    "avatar": {
+      "style": "Style d'avatar",
+      "generate": "Générer un avatar",
+      "download": "Télécharger"
+    },
+    "compress": {
+      "dropzoneText": "Glissez et déposez vos images ici ou cliquez pour sélectionner",
+      "compressing": "Compression...",
+      "originalSize": "Taille originale",
+      "compressedSize": "Taille compressée",
+      "download": "Télécharger l'image optimisée"
+    },
+    "health": {
+      "height": "Taille (cm)",
+      "weight": "Poids (kg)",
+      "age": "Âge",
+      "gender": "Sexe",
+      "calculate": "Calculer l'IMC"
+    },
+    "hash": {
+      "inputPlaceholder": "Entrez le texte à hacher ou dont vous souhaitez calculer l'empreinte...",
+      "algorithm": "Algorithme",
+      "outputFormat": "Format de sortie",
+      "hexUppercase": "HEX Majuscules",
+      "hexLowercase": "HEX Minuscules",
+      "copyHash": "Copier le hash",
+      "copyAll": "Tout copier",
+      "generatedHashes": "Empreintes générées",
+      "sha256": "SHA-256",
+      "sha512": "SHA-512",
+      "sha1": "SHA-1",
+      "sha384": "SHA-384",
+      "md5": "MD5",
+      "characterCount": "Caractères"
+    },
+    "diff": {
+      "originalPlaceholder": "Collez le texte ou code original ici...",
+      "modifiedPlaceholder": "Collez le texte ou code modifié ici...",
+      "originalLabel": "Texte original",
+      "modifiedLabel": "Texte modifié",
+      "splitView": "Vue côte à côte",
+      "unifiedView": "Vue unifiée",
+      "ignoreWhitespace": "Ignorer les espaces",
+      "clear": "Tout effacer",
+      "swap": "Intervertir les textes",
+      "noDifferences": "Aucune différence trouvée — les deux textes sont identiques.",
+      "differencesFound": "Différences détectées",
+      "additions": "Ajouts",
+      "deletions": "Suppressions",
+      "unchanged": "Inchangé"
+    },
+    "csv2json": {
+      "csvPlaceholder": "id,nom,role,actif\n1,Alice,Développeuse,true\n2,Bob,Designer,false",
+      "jsonPlaceholder": "Le résultat JSON s'affichera ici...",
+      "csvLabel": "Entrée CSV",
+      "jsonLabel": "Sortie JSON",
+      "convert": "Convertir en JSON",
+      "delimiter": "Délimiteur",
+      "comma": "Virgule (,)",
+      "semicolon": "Point-virgule (;)",
+      "tab": "Tabulation (\\t)",
+      "pipe": "Pipe (|)",
+      "hasHeader": "La première ligne est l'en-tête",
+      "parseNumbers": "Convertir nombres et booléens",
+      "indentation": "Indentation",
+      "twoSpaces": "2 Espaces",
+      "fourSpaces": "4 Espaces",
+      "minified": "Minifié",
+      "copyJson": "Copier le JSON",
+      "downloadJson": "Télécharger .json",
+      "clear": "Effacer",
+      "rowsConverted": "lignes converties"
+    },
+    "dns": {
+      "domainPlaceholder": "exemple.com",
+      "lookupButton": "Rechercher DNS",
+      "recordType": "Type d'enregistrement",
+      "allTypes": "Tous les enregistrements (ANY)",
+      "searching": "Interrogation des serveurs DNS...",
+      "results": "Enregistrements DNS",
+      "noRecords": "Aucun enregistrement DNS trouvé pour cette requête.",
+      "type": "Type",
+      "name": "Nom",
+      "value": "Valeur / Cible",
+      "ttl": "TTL",
+      "copyRecord": "Copier l'enregistrement",
+      "error": "Échec de résolution DNS. Veuillez vérifier le nom de domaine."
+    },
+    "markdown": {
+      "editorPlaceholder": "# Bienvenue sur l'Éditeur Markdown\n\nCommencez à rédiger en **Markdown** et observez l'aperçu en direct à droite !\n\n- Aperçu en temps réel\n- Export HTML propre\n- Coloration syntaxique\n\n```javascript\nconsole.log('Bonjour, SnapTools !');\n```",
+      "editorTab": "Éditeur",
+      "previewTab": "Aperçu",
+      "splitTab": "Vue partagée",
+      "copyHtml": "Copier le HTML",
+      "copyMarkdown": "Copier le Markdown",
+      "downloadHtml": "Télécharger HTML",
+      "downloadMd": "Télécharger .md",
+      "clear": "Effacer",
+      "words": "Mots",
+      "characters": "Caractères",
+      "lines": "Lignes"
+    },
+    "margin": {
+      "costPrice": "Coût d'achat (HT)",
+      "sellingPrice": "Prix de vente (HT)",
+      "grossProfit": "Marge brute (bénéfice)",
+      "profitMargin": "Taux de marque (sur PV)",
+      "markup": "Taux de marge (sur coût)",
+      "costPlaceholder": "ex. 50,00",
+      "revenuePlaceholder": "ex. 100,00",
+      "marginPlaceholder": "ex. 50,0",
+      "markupPlaceholder": "ex. 100,0",
+      "calculate": "Calculer",
+      "reset": "Réinitialiser",
+      "currency": "Devise",
+      "formulaExplanation": "Taux de marque = (Marge / Prix de vente) × 100 | Taux de marge = (Marge / Coût) × 100"
+    },
+    "pomodoro": {
+      "focus": "Session de travail",
+      "shortBreak": "Courte pause",
+      "longBreak": "Longue pause",
+      "start": "Démarrer",
+      "pause": "Pause",
+      "reset": "Réinitialiser",
+      "skip": "Passer à la suite",
+      "session": "Session",
+      "of": "sur",
+      "completedToday": "Pomodoros terminés aujourd'hui",
+      "soundNotification": "Alerte sonore",
+      "autoStartBreaks": "Démarrage automatique des pauses",
+      "workDuration": "Durée de travail (min)",
+      "shortBreakDuration": "Courte pause (min)",
+      "longBreakDuration": "Longue pause (min)"
+    },
+    "username": {
+      "theme": "Thème / Style",
+      "allThemes": "Tous les styles",
+      "gaming": "Gaming & Esport",
+      "aesthetic": "Esthétique & Épuré",
+      "tech": "Tech & Cyberpunk",
+      "fantasy": "Fantaisie & RPG",
+      "funny": "Drôle & Décalé",
+      "includeNumbers": "Inclure des chiffres",
+      "prefix": "Préfixe (facultatif)",
+      "suffix": "Suffixe (facultatif)",
+      "generate": "Générer des pseudos",
+      "copy": "Copier",
+      "copyAll": "Tout copier",
+      "generatedCount": "Pseudos générés",
+      "favorite": "Favori"
+    },
+    "anagram": {
+      "inputPlaceholder": "Entrez vos lettres ou un mot (ex. scrabble, ecoute, maitre)...",
+      "solveButton": "Trouver les anagrammes",
+      "minLength": "Longueur min.",
+      "filterByLength": "Filtrer par longueur",
+      "allLengths": "Toutes les longueurs",
+      "sortBy": "Trier par",
+      "sortByLength": "Longueur des mots (décroissant)",
+      "sortByPoints": "Points Scrabble",
+      "sortByAlpha": "Ordre alphabétique",
+      "searching": "Recherche des mots valides...",
+      "resultsCount": "mots trouvés",
+      "noResults": "Aucune anagramme valide trouvée pour ces lettres.",
+      "points": "pts",
+      "letters": "lettres",
+      "wildcardTip": "Astuce : Utilisez ? pour les jokers (lettres blanches)"
+    },
+    "thumbnail": {
+      "urlPlaceholder": "Collez l'URL de la vidéo YouTube (ex. https://www.youtube.com/watch?v=dQw4w9WgXcQ)...",
+      "fetchButton": "Récupérer la miniature",
+      "preview": "Aperçu de la miniature",
+      "resolutions": "Résolutions disponibles",
+      "maxRes": "Résolution Maximale (HD 1080p / 4K)",
+      "highRes": "Haute Qualité (HQ 720p / 480p)",
+      "mediumRes": "Qualité Moyenne (MQ 360p)",
+      "standardRes": "Définition Standard (SD 480p)",
+      "download": "Télécharger l'image",
+      "copyLink": "Copier le lien de l'image",
+      "invalidUrl": "Veuillez entrer une URL de vidéo YouTube valide.",
+      "loading": "Récupération des miniatures..."
+    },
+    "jwt": {
+      "inputPlaceholder": "Collez votre JWT ici...",
+      "decodeBtn": "Décoder le JWT",
+      "headerLabel": "En-tête (Algorithme et Type)",
+      "payloadLabel": "Payload (Données et Revendications)",
+      "signatureLabel": "Signature",
+      "invalidToken": "Format de JWT invalide. Assurez-vous qu'il contient 3 parties séparées par des points.",
+      "copied": "Copié dans le presse-papiers"
+    },
+    "url": {
+      "inputPlaceholder": "Entrez l'URL à parser...",
+      "parseBtn": "Parser l'URL",
+      "protocol": "Protocole",
+      "host": "Domaine (Host)",
+      "port": "Port",
+      "path": "Chemin (Path)",
+      "query": "Paramètres de requête",
+      "hash": "Ancre (Hash)",
+      "encodeBtn": "Encoder l'URL",
+      "decodeBtn": "Décoder l'URL"
+    },
+    "chmod": {
+      "octalLabel": "Notation Octale",
+      "symbolicLabel": "Notation Symbolique",
+      "owner": "Propriétaire",
+      "group": "Groupe",
+      "public": "Public",
+      "read": "Lecture (Read)",
+      "write": "Écriture (Write)",
+      "execute": "Exécution (Execute)",
+      "commandPreview": "Aperçu de la commande Linux"
+    },
+    "meta": {
+      "titleLabel": "Titre de la page",
+      "descLabel": "Description de la page",
+      "keywordsLabel": "Mots-clés (séparés par des virgules)",
+      "imageLabel": "URL de l'image d'aperçu",
+      "generateBtn": "Générer les balises Meta",
+      "codeLabel": "Balises HTML <head>",
+      "copyCode": "Copier le code HTML"
+    },
+    "loan": {
+      "amountLabel": "Montant du Prêt",
+      "rateLabel": "Taux d'Intérêt Annuel (%)",
+      "termLabel": "Durée du Prêt (Années)",
+      "calcBtn": "Calculer la Mensualité",
+      "monthlyPay": "Paiement Mensuel (Mensualité)",
+      "totalInterest": "Total des Intérêts",
+      "totalAmount": "Montant Total à Rembourser"
+    },
+    "discount": {
+      "priceLabel": "Prix Initial",
+      "discountLabel": "Pourcentage de Remise (%)",
+      "calcBtn": "Calculer le Prix Final",
+      "savedAmount": "Vous Économisez",
+      "finalPrice": "Prix Final Soldé"
+    },
+    "age": {
+      "dobLabel": "Date de Naissance",
+      "calcBtn": "Calculer l'Âge Exact",
+      "resultYears": "Années",
+      "resultMonths": "Mois",
+      "resultDays": "Jours",
+      "summary": "Vous avez exactement :"
+    },
+    "case": {
+      "inputPlaceholder": "Tapez ou collez votre texte ici pour modifier sa casse...",
+      "upper": "MAJUSCULES",
+      "lower": "minuscules",
+      "title": "Casse de Titre",
+      "camel": "camelCase",
+      "snake": "snake_case",
+      "kebab": "kebab-case",
+      "copyResult": "Copier le résultat"
+    },
+    "ratio": {
+      "width": "Largeur (px)",
+      "height": "Hauteur (px)",
+      "targetRatio": "Ratio d'Aspect Cible",
+      "calcBtn": "Calculer la Dimension",
+      "result": "Dimension Calculée"
+    },
+    "bpm": {
+      "tapBtn": "TAPPER ICI",
+      "bpmValue": "BPM",
+      "resetBtn": "Réinitialiser",
+      "instruction": "Appuyez sur le bouton ou la touche Espace en rythme avec la musique"
+    },
+    "xml": {
+      "format": "Formater XML",
+      "inputPlaceholder": "Collez le XML ici...",
+      "invalidXml": "",
+      "title": "",
+      "placeholder": "",
+      "formatBtn": "",
+      "clearBtn": ""
+    },
+    "css": {
+      "minify": "Minifier CSS",
+      "inputPlaceholder": "Collez le CSS ici...",
+      "title": "",
+      "placeholder": "",
+      "minifyBtn": "",
+      "clearBtn": ""
+    },
+    "base": {
+      "inputNumber": "Entrez un nombre...",
+      "fromBase": "De la base",
+      "toBase": "Vers la base",
+      "convert": "Convertir",
+      "invalidInput": "",
+      "title": ""
+    },
+    "html-entities": {
+      "encode": "Encoder",
+      "decode": "Décoder",
+      "inputPlaceholder": "Entrez le texte...",
+      "Error decoding entities": "",
+      "title": "",
+      "placeholder": "",
+      "encodeBtn": "",
+      "decodeBtn": ""
+    },
+    "percentage": {
+      "calculate": "Calculer",
+      "result": "Résultat",
+      "title": ""
+    },
+    "salary": {
+      "hourly": "Horaire",
+      "annual": "Annuel",
+      "calculate": "Calculer",
+      "title": ""
+    },
+    "tip": {
+      "billAmount": "Montant",
+      "tipPercentage": "Pourboire %",
+      "split": "Diviser par",
+      "total": "Total",
+      "title": ""
+    },
+    "timezone": {
+      "selectTimezone": "Choisir Fuseau",
+      "convertedTime": "Heure Convertie",
+      "title": ""
+    },
+    "shuffle": {
+      "shuffleBtn": "Mélanger",
+      "inputPlaceholder": "Entrez les éléments...",
+      "\\n": "",
+      "title": "",
+      "placeholder": "",
+      "copyBtn": ""
+    },
+    "remove-lines": {
+      "removeBtn": "Supprimer les Lignes",
+      "inputPlaceholder": "Entrez le texte...",
+      "title": "",
+      "placeholder": "",
+      "removeBreaksBtn": "",
+      "removeEmptyBtn": "",
+      "copyBtn": ""
+    },
+    "pdf-merge": {
+      "selectFiles": "Sélectionner des Fichiers PDF",
+      "mergeBtn": "Fusionner les PDF",
+      "downloadBtn": "Télécharger le PDF Fusionné",
+      "dropzone": "Glissez et déposez les PDF ici"
+    },
+    "pdf-split": {
+      "selectFiles": "Sélectionner un Fichier PDF",
+      "splitBtn": "Diviser le PDF",
+      "pageRange": "Plage de pages (ex. 1-3, 5)",
+      "downloadBtn": "Télécharger le PDF Divisé",
+      "dropzone": "Glissez et déposez le PDF ici"
+    },
+    "pdf-protect": {
+      "selectFiles": "Sélectionner un Fichier PDF",
+      "protectBtn": "Protéger le PDF",
+      "passwordPlaceholder": "Entrez le mot de passe",
+      "downloadBtn": "Télécharger le PDF Protégé",
+      "dropzone": "Glissez et déposez le PDF ici"
+    },
+    "yt-downloader": {
+      "urlPlaceholder": "Collez l'URL YouTube ici...",
+      "downloadBtn": "Télécharger la Vidéo",
+      "quality": "Qualité",
+      "format": "Format",
+      "processing": "Traitement en cours...",
+      "downloadReady": "Prêt à Télécharger"
+    },
+    "tiktok-downloader": {
+      "title": "Téléchargeur TikTok"
+    },
+    "insta-downloader": {
+      "urlPlaceholder": "Collez l'URL Instagram ici...",
+      "downloadBtn": "Télécharger le Média",
+      "pasteUrl": "Coller l'URL",
+      "processing": "Traitement en cours...",
+      "downloadReady": "Prêt à Télécharger"
+    },
+    "video-to-mp3": {
+      "title": "Convertisseur Vidéo en MP3"
+    },
+    "img-converter": {
+      "selectImage": "Sélectionner une Image",
+      "convertBtn": "Convertir l'Image",
+      "outputFormat": "Format de Sortie",
+      "dropzone": "Glissez et déposez l'image ici"
+    },
+    "img-compressor": {
+      "selectImage": "Sélectionner une Image",
+      "compressBtn": "Compresser l'Image",
+      "qualitySlider": "Niveau de Compression",
+      "dropzone": "Glissez et déposez l'image ici"
+    },
+    "youtube-thumbnail": {
+      "urlPlaceholder": "Collez l'URL YouTube ici...",
+      "downloadBtn": "Télécharger la Miniature",
+      "quality": "Qualité de la Miniature",
+      "processing": "Récupération...",
+      "downloadReady": "Prêt à Télécharger"
+    },
+    "dns-lookup": {
+      "domainPlaceholder": "exemple.com",
+      "lookupBtn": "Recherche DNS",
+      "results": "Enregistrements DNS",
+      "recordType": "Type",
+      "loading": "Chargement..."
+    },
+    "whois": {
+      "domainPlaceholder": "exemple.com",
+      "lookupBtn": "Recherche WHOIS",
+      "results": "Données WHOIS",
+      "recordType": "Donnée",
+      "loading": "Chargement..."
+    },
+    "ssl-checker": {
+      "domainPlaceholder": "exemple.com",
+      "lookupBtn": "Vérifier SSL",
+      "results": "Détails SSL",
+      "recordType": "Détail",
+      "loading": "Chargement..."
+    },
+    "headers-checker": {
+      "domainPlaceholder": "exemple.com",
+      "lookupBtn": "Vérifier En-têtes",
+      "results": "En-têtes HTTP",
+      "recordType": "En-tête",
+      "loading": "Chargement..."
+    },
+    "hash-generator": {
+      "inputPlaceholder": "Texte à hacher...",
+      "generateBtn": "Générer Hash",
+      "algorithm": "Algorithme",
+      "copyHash": "Copier",
+      "identifyBtn": "Identifier",
+      "hashType": "Type"
+    },
+    "hash-identifier": {
+      "inputPlaceholder": "Hash à identifier...",
+      "generateBtn": "Identifier",
+      "algorithm": "Algorithmes possibles",
+      "copyHash": "Copier Résultat",
+      "identifyBtn": "Identifier",
+      "hashType": "Type"
+    },
+    "mac-lookup": {
+      "macPlaceholder": "Adresse MAC...",
+      "lookupBtn": "Recherche Fabricant",
+      "portRange": "N/A",
+      "scanBtn": "N/A",
+      "targetPlaceholder": "N/A"
+    },
+    "port-scanner": {
+      "macPlaceholder": "N/A",
+      "lookupBtn": "N/A",
+      "portRange": "Plage de ports",
+      "scanBtn": "Scanner",
+      "targetPlaceholder": "IP ou Domaine..."
+    },
+    "jwt-decoder": {
+      "tokenPlaceholder": "Coller JWT...",
+      "decodeBtn": "Décoder",
+      "header": "En-tête",
+      "payload": "Charge utile",
+      "signature": "Signature",
+      "expired": "Expiré"
+    },
+    "subnet-calc": {
+      "ipPlaceholder": "Adresse IP",
+      "cidrLabel": "CIDR",
+      "calculateBtn": "Calculer",
+      "networkAddress": "Adresse réseau",
+      "broadcastAddress": "Adresse de diffusion",
+      "usableHosts": "Hôtes utilisables",
+      "subnetMask": "Masque de sous-réseau"
+    },
+    "chmod-calc": {
+      "ownerLabel": "Propriétaire",
+      "groupLabel": "Groupe",
+      "othersLabel": "Autres",
+      "readLabel": "Lecture (4)",
+      "writeLabel": "Écriture (2)",
+      "executeLabel": "Exécution (1)",
+      "numericValue": "Numérique",
+      "symbolicValue": "Symbolique"
+    },
+    "cron-parser": {
+      "expressionPlaceholder": "* * * * *",
+      "parseBtn": "Parser",
+      "nextRuns": "Prochaines exécutions",
+      "description": "Description",
+      "buildBtn": "Créer Cron"
+    },
+    "useragent-parser": {
+      "detectBtn": "Parser User Agent",
+      "browser": "Navigateur",
+      "os": "Système",
+      "device": "Appareil",
+      "parseBtn": "Parser"
+    },
+    "sql-formatter": {
+      "inputPlaceholder": "Coller SQL...",
+      "formatBtn": "Formater",
+      "copyBtn": "Copier",
+      "indentSize": "Taille d'indentation"
+    },
+    "diff-checker": {
+      "originalLabel": "Texte Original",
+      "modifiedLabel": "Texte Modifié",
+      "compareBtn": "Comparer",
+      "additions": "Ajouts",
+      "deletions": "Suppressions"
+    },
+    "merge-pdf": {
+      "selectFiles": "Sélectionner des Fichiers PDF",
+      "mergeBtn": "Fusionner les PDF",
+      "downloadBtn": "Télécharger le PDF Fusionné",
+      "dropzone": "Glissez et déposez les PDF ici"
+    },
+    "split-pdf": {
+      "selectFiles": "Sélectionner un Fichier PDF",
+      "splitBtn": "Diviser le PDF",
+      "pageRange": "Plage de pages (ex. 1-3, 5)",
+      "downloadBtn": "Télécharger le PDF Divisé",
+      "dropzone": "Glissez et déposez le PDF ici"
+    },
+    "compress-pdf": {
+      "selectFiles": "Sélectionner un Fichier PDF",
+      "compressBtn": "Compresser le PDF",
+      "downloadBtn": "Télécharger le PDF Compressé",
+      "dropzone": "Glissez et déposez le PDF ici",
+      "qualitySlider": "Niveau de Compression"
+    },
+    "pdf-to-jpg": {
+      "selectFiles": "Sélectionner un Fichier PDF",
+      "convertBtn": "Convertir en JPG",
+      "downloadBtn": "Télécharger les Images JPG",
+      "dropzone": "Glissez et déposez le PDF ici"
+    },
+    "jpg-to-pdf": {
+      "selectFiles": "Sélectionner des Images JPG",
+      "convertBtn": "Convertir en PDF",
+      "downloadBtn": "Télécharger le PDF",
+      "dropzone": "Glissez et déposez les JPG ici"
+    },
+    "protect-pdf": {
+      "selectFiles": "Sélectionner un Fichier PDF",
+      "protectBtn": "Protéger le PDF",
+      "passwordPlaceholder": "Entrez le mot de passe",
+      "downloadBtn": "Télécharger le PDF Protégé",
+      "dropzone": "Glissez et déposez le PDF ici"
+    },
+    "unlock-pdf": {
+      "selectFiles": "Sélectionner le PDF Protégé",
+      "unlockBtn": "Déverrouiller le PDF",
+      "passwordPlaceholder": "Entrez le mot de passe actuel",
+      "downloadBtn": "Télécharger le PDF Déverrouillé",
+      "dropzone": "Glissez et déposez le PDF ici"
+    },
+    "youtube-downloader": {
+      "title": "Téléchargeur YouTube"
+    },
+    "instagram-downloader": {
+      "title": "Téléchargeur Instagram"
+    },
+    "twitter-downloader": {
+      "title": "Téléchargeur Twitter"
+    },
+    "remove-background": {
+      "title": "Détourage d'Image"
+    },
+    "image-compressor": {
+      "title": "Compresseur d'Image"
+    },
+    "heic-to-jpg": {
+      "title": "HEIC en JPG"
+    },
+    "resize-image": {
+      "title": "Redimensionner Image"
+    },
+    "crop-image": {
+      "title": "Recadrer Image"
+    },
+    "ico-converter": {
+      "title": "Convertisseur ICO"
+    },
+    "grammar-checker": {
+      "title": "Correcteur Grammatical"
+    },
+    "article-spinner": {
+      "title": "Réécriture de Texte"
+    },
+    "text-to-speech": {
+      "title": "Synthèse Vocale"
+    },
+    "speech-to-text": {
+      "title": "Dictée Vocale"
+    },
+    "plagiarism-checker": {
+      "title": "Détecteur de Plagiat"
+    },
+    "qr-scanner": {
+      "title": "Scanner QR"
+    },
+    "word-to-pdf": {
+      "title": "Word vers PDF"
+    },
+    "watermark-pdf": {
+      "title": "Ajouter un Filigrane PDF",
+      "description": "Ajoutez un texte ou une image en filigrane."
+    },
+    "page-numbers-pdf": {
+      "title": "Numéroter Pages PDF",
+      "description": "Insérez des numéros de page."
+    },
+    "rotate-pdf": {
+      "title": "Pivoter un PDF",
+      "description": "Faites pivoter vos pages PDF en ligne."
+    },
+    "organize-pdf": {
+      "title": "Organiser un PDF",
+      "description": "Triez, ajoutez et supprimez des pages PDF."
+    },
+    "html-to-pdf": {
+      "title": "HTML en PDF",
+      "description": "Convertissez des pages web en PDF."
+    },
+    "blur-face": {
+      "title": "Flouter un Visage",
+      "description": "Détectez et floutez les visages."
+    },
+    "meme-generator": {
+      "title": "Générateur de Mème",
+      "description": "Créez des mèmes personnalisés."
+    },
+    "favicon-generator": {
+      "title": "Générateur de Favicon",
+      "description": "Convertir image en favicon.ico."
+    },
+    "image-resizer": {
+      "title": "Redimensionner Image",
+      "description": "Redimensionner une image."
+    },
+    "image-cropper": {
+      "title": "Recadrer Image",
+      "description": "Recadrez des images en ligne."
+    },
+    "schema-generator": {
+      "title": "Générateur Schéma JSON-LD",
+      "description": "Créer des données structurées SEO."
+    },
+    "keyword-density": {
+      "title": "Densité de Mots-clés",
+      "description": "Analysez la densité des mots-clés."
+    },
+    "robots-txt-generator": {
+      "title": "Générateur Robots.txt",
+      "description": "Générer un fichier robots.txt."
+    },
+    "code-beautifier": {
+      "title": "Formateur de Code",
+      "description": "Formater du code HTML/CSS/JS."
+    },
+    "paraphrase-tool": {
+      "title": "Outil de Paraphrase",
+      "description": "Réécrivez vos textes avec des synonymes."
+    },
+    "email-signature": {
+      "title": "Signature Email",
+      "description": "Créer une signature email pro."
+    },
+    "utm": {
+      "urlLabel": "URL du site web *",
+      "sourceLabel": "Source (utm_source)",
+      "mediumLabel": "Support (utm_medium)",
+      "campaignLabel": "Nom de la campagne (utm_campaign)",
+      "termLabel": "Mot-clé (utm_term)",
+      "contentLabel": "Contenu (utm_content)",
+      "resultTitle": "URL UTM Générée",
+      "copied": "Copié !",
+      "copyBtn": "Copier l'URL"
+    }
+  }
+}
