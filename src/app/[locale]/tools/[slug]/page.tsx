@@ -19,7 +19,7 @@ export async function generateMetadata({ params }: ToolPageProps): Promise<Metad
   if (!content) return {};
 
   const cluster = getClusterById(tool.cluster);
-  const domain = process.env.NEXT_PUBLIC_ROOT_DOMAIN || 'snaptools.co';
+  const domain = process.env.NEXT_PUBLIC_ROOT_DOMAIN || 'snaptools.store';
   const canonicalUrl = `https://${domain}/${locale}/tools/${slug}`;
 
   return {
@@ -79,7 +79,7 @@ export default async function ToolPage({ params }: ToolPageProps) {
       '@type': 'SoftwareApplication',
       name: content.metaTitle,
       description: content.metaDescription,
-      url: `https://${process.env.NEXT_PUBLIC_ROOT_DOMAIN || 'snaptools.co'}/${locale}/tools/${slug}`,
+      url: `https://${process.env.NEXT_PUBLIC_ROOT_DOMAIN || 'snaptools.store'}/${locale}/tools/${slug}`,
       applicationCategory: 'UtilitiesApplication',
       operatingSystem: 'Any',
       offers: {
