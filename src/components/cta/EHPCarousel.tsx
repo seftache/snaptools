@@ -3,60 +3,129 @@
 import { useRef, useState, useEffect, useCallback } from "react";
 import { motion, useInView } from "framer-motion";
 import Link from "next/link";
+import { useParams } from "next/navigation";
 
 /* ══════════════════════════════════════════════════
-   DATA
+   DATA (Localized FR & EN)
 ══════════════════════════════════════════════════ */
-const HERO_SLIDES = [
-  {
-    id: "pentest",
-    title: "Simulateurs\nd'Examens.",
-    desc: "Préparez vos certifications de cybersécurité (CEH, OSCP, CompTIA) avec nos simulateurs d'examens réalistes.",
-    image: "/ehp-banner.jpg",
-    link: "https://ethicalhackerprep.com",
-    badge: "Red Team",
+const CONTENT = {
+  fr: {
+    headlinePre: "ETHICAL HACKER PREP",
+    headlineMain: "Maîtrisez la Cybersécurité.",
+    headlineSub: "Défendez comme un pro.",
+    discoverBtn: "Découvrir",
+    learnMoreBtn: "En savoir plus",
+    pauseLabel: "Pause",
+    playLabel: "Lecture",
+    slides: [
+      {
+        id: "pentest",
+        title: "Simulateurs\nd'Examens.",
+        desc: "Préparez vos certifications de cybersécurité (CEH, OSCP, CompTIA) avec nos simulateurs d'examens réalistes.",
+        image: "/ehp-banner.jpg",
+        link: "https://ethicalhackerprep.com?utm_source=snaptools&utm_medium=carousel&utm_campaign=pentest",
+        badge: "Red Team",
+      },
+      {
+        id: "defense",
+        title: "Cyber\nDéfense.",
+        desc: "Entraînez-vous dans des conditions réelles d'examen. Identifiez vos faiblesses et réussissez du premier coup.",
+        image: "/cyber_blue_1786618884481.jpg",
+        link: "https://ethicalhackerprep.com?utm_source=snaptools&utm_medium=carousel&utm_campaign=defense",
+        badge: "Blue Team",
+      },
+      {
+        id: "bounty",
+        title: "Tests\nPratiques.",
+        desc: "Plongez dans des scénarios techniques complexes. Bug Bounty, Pentest, et sécurité des applications Web.",
+        image: "/cyber_web_1786618911810.jpg",
+        link: "https://ethicalhackerprep.com?utm_source=snaptools&utm_medium=carousel&utm_campaign=bounty",
+        badge: "Web Sec",
+      },
+      {
+        id: "osint",
+        title: "OSINT &\nRenseignement.",
+        desc: "Collectez et analysez des informations en source ouverte. Des questions d'examen basées sur des cas réels.",
+        image: "/cyber_osint_1786618931736.jpg",
+        link: "https://ethicalhackerprep.com?utm_source=snaptools&utm_medium=carousel&utm_campaign=osint",
+        badge: "OSINT",
+      },
+      {
+        id: "cloud",
+        title: "Sécurité\nCloud.",
+        desc: "Auditez et sécurisez les environnements AWS, Azure et GCP. Préparez les certifications Cloud Security les plus demandées.",
+        image: "/cyber_cloud_1786618962677.jpg",
+        link: "https://ethicalhackerprep.com?utm_source=snaptools&utm_medium=carousel&utm_campaign=cloud",
+        badge: "Cloud Sec",
+      },
+    ],
+    bottomCards: [
+      { id: "cert-oscp",  label: "Simulation d'Examen", title: "Préparation OSCP",  image: "/ehp-banner.jpg", link: "https://ethicalhackerprep.com?utm_source=snaptools&utm_medium=card&utm_campaign=oscp" },
+      { id: "cert-ceh",   label: "Simulation d'Examen", title: "Formation CEH v12", image: "/cyber_blue_1786618884481.jpg", link: "https://ethicalhackerprep.com?utm_source=snaptools&utm_medium=card&utm_campaign=ceh" },
+      { id: "labs-pro",   label: "Pratique",      title: "Labs Dédiés",       image: "/cyber_web_1786618911810.jpg", link: "https://ethicalhackerprep.com?utm_source=snaptools&utm_medium=card&utm_campaign=labs" },
+      { id: "comptia-sec",label: "Simulation d'Examen", title: "CompTIA Security+", image: "/cyber_osint_1786618931736.jpg", link: "https://ethicalhackerprep.com?utm_source=snaptools&utm_medium=card&utm_campaign=comptia" },
+      { id: "reverse",    label: "Spécialité",    title: "Reverse Engineering",image:"/cyber_cloud_1786618962677.jpg", link: "https://ethicalhackerprep.com?utm_source=snaptools&utm_medium=card&utm_campaign=reverse" },
+    ],
   },
-  {
-    id: "defense",
-    title: "Cyber\nDéfense.",
-    desc: "Entraînez-vous dans des conditions réelles d'examen. Identifiez vos faiblesses et réussissez du premier coup.",
-    image: "/cyber_blue_1786618884481.jpg",
-    link: "https://ethicalhackerprep.com",
-    badge: "Blue Team",
+  en: {
+    headlinePre: "ETHICAL HACKER PREP",
+    headlineMain: "Master Cybersecurity.",
+    headlineSub: "Defend like a pro.",
+    discoverBtn: "Discover",
+    learnMoreBtn: "Learn more",
+    pauseLabel: "Pause",
+    playLabel: "Play",
+    slides: [
+      {
+        id: "pentest",
+        title: "Exam\nSimulators.",
+        desc: "Prepare for top cybersecurity certifications (CEH, OSCP, CompTIA) with authentic practice engines.",
+        image: "/ehp-banner.jpg",
+        link: "https://ethicalhackerprep.com?utm_source=snaptools&utm_medium=carousel&utm_campaign=pentest",
+        badge: "Red Team",
+      },
+      {
+        id: "defense",
+        title: "Cyber\nDefense.",
+        desc: "Train under authentic exam conditions. Pinpoint weaknesses and pass on your first attempt.",
+        image: "/cyber_blue_1786618884481.jpg",
+        link: "https://ethicalhackerprep.com?utm_source=snaptools&utm_medium=carousel&utm_campaign=defense",
+        badge: "Blue Team",
+      },
+      {
+        id: "bounty",
+        title: "Hands-On\nPractice.",
+        desc: "Dive into complex technical scenarios: Bug Bounty, Pentesting, and Web Application Security.",
+        image: "/cyber_web_1786618911810.jpg",
+        link: "https://ethicalhackerprep.com?utm_source=snaptools&utm_medium=carousel&utm_campaign=bounty",
+        badge: "Web Sec",
+      },
+      {
+        id: "osint",
+        title: "OSINT &\nIntelligence.",
+        desc: "Collect and analyze open-source intelligence with real-world case scenarios.",
+        image: "/cyber_osint_1786618931736.jpg",
+        link: "https://ethicalhackerprep.com?utm_source=snaptools&utm_medium=carousel&utm_campaign=osint",
+        badge: "OSINT",
+      },
+      {
+        id: "cloud",
+        title: "Cloud\nSecurity.",
+        desc: "Audit and secure AWS, Azure, and GCP environments. Prepare for high-demand Cloud Security certs.",
+        image: "/cyber_cloud_1786618962677.jpg",
+        link: "https://ethicalhackerprep.com?utm_source=snaptools&utm_medium=carousel&utm_campaign=cloud",
+        badge: "Cloud Sec",
+      },
+    ],
+    bottomCards: [
+      { id: "cert-oscp",  label: "Exam Simulator", title: "OSCP Preparation",  image: "/ehp-banner.jpg", link: "https://ethicalhackerprep.com?utm_source=snaptools&utm_medium=card&utm_campaign=oscp" },
+      { id: "cert-ceh",   label: "Exam Simulator", title: "CEH v12 Training",  image: "/cyber_blue_1786618884481.jpg", link: "https://ethicalhackerprep.com?utm_source=snaptools&utm_medium=card&utm_campaign=ceh" },
+      { id: "labs-pro",   label: "Practice Labs",  title: "Dedicated Labs",     image: "/cyber_web_1786618911810.jpg", link: "https://ethicalhackerprep.com?utm_source=snaptools&utm_medium=card&utm_campaign=labs" },
+      { id: "comptia-sec",label: "Exam Simulator", title: "CompTIA Security+", image: "/cyber_osint_1786618931736.jpg", link: "https://ethicalhackerprep.com?utm_source=snaptools&utm_medium=card&utm_campaign=comptia" },
+      { id: "reverse",    label: "Specialty",      title: "Reverse Engineering",image:"/cyber_cloud_1786618962677.jpg", link: "https://ethicalhackerprep.com?utm_source=snaptools&utm_medium=card&utm_campaign=reverse" },
+    ],
   },
-  {
-    id: "bounty",
-    title: "Tests\nPratiques.",
-    desc: "Plongez dans des scénarios techniques complexes. Bug Bounty, Pentest, et sécurité des applications Web.",
-    image: "/cyber_web_1786618911810.jpg",
-    link: "https://ethicalhackerprep.com",
-    badge: "Web Sec",
-  },
-  {
-    id: "osint",
-    title: "OSINT &\nRenseignement.",
-    desc: "Collectez et analysez des informations en source ouverte. Des questions d'examen basées sur des cas réels.",
-    image: "/cyber_osint_1786618931736.jpg",
-    link: "https://ethicalhackerprep.com",
-    badge: "OSINT",
-  },
-  {
-    id: "cloud",
-    title: "Sécurité\nCloud.",
-    desc: "Auditez et sécurisez les environnements AWS, Azure et GCP. Préparez les certifications Cloud Security les plus demandées.",
-    image: "/cyber_cloud_1786618962677.jpg",
-    link: "https://ethicalhackerprep.com",
-    badge: "Cloud Sec",
-  },
-];
-
-const BOTTOM_CARDS = [
-  { id: "cert-oscp",  label: "Simulation d'Examen", title: "Préparation OSCP",  image: "/ehp-banner.jpg", link: "https://ethicalhackerprep.com" },
-  { id: "cert-ceh",   label: "Simulation d'Examen", title: "Formation CEH v12", image: "/cyber_blue_1786618884481.jpg", link: "https://ethicalhackerprep.com" },
-  { id: "labs-pro",   label: "Pratique",      title: "Labs Dédiés",       image: "/cyber_web_1786618911810.jpg", link: "https://ethicalhackerprep.com" },
-  { id: "comptia-sec",label: "Simulation d'Examen", title: "CompTIA Security+", image: "/cyber_osint_1786618931736.jpg", link: "https://ethicalhackerprep.com" },
-  { id: "reverse",    label: "Spécialité",    title: "Reverse Engineering",image:"/cyber_cloud_1786618962677.jpg", link: "https://ethicalhackerprep.com" },
-];
+};
 
 const AUTOPLAY_MS = 5000;
 const TICK_MS = 16;
@@ -115,10 +184,10 @@ function useDragToScroll(containerRef: React.RefObject<HTMLDivElement | null>) {
 /* ══════════════════════════════════════════════════
    SUB-COMPONENT — Hero Slide Card
 ══════════════════════════════════════════════════ */
-type Slide = typeof HERO_SLIDES[0];
+type Slide = typeof CONTENT.fr.slides[0];
 
 function SlideCard({
-  slide, isActive, slideW, slideH, progress, priority, onClick,
+  slide, isActive, slideW, slideH, progress, priority, discoverBtn, learnMoreBtn, onClick,
 }: {
   slide: Slide;
   isActive: boolean;
@@ -126,6 +195,8 @@ function SlideCard({
   slideH: number;
   progress: number;
   priority: boolean;
+  discoverBtn: string;
+  learnMoreBtn: string;
   onClick: (e: React.MouseEvent<HTMLAnchorElement>) => void;
 }) {
   return (
@@ -260,7 +331,7 @@ function SlideCard({
               userSelect: "none",
             }}
           >
-            Découvrir
+            {discoverBtn}
           </span>
           <span
             style={{
@@ -274,7 +345,7 @@ function SlideCard({
               userSelect: "none",
             }}
           >
-            En savoir plus
+            {learnMoreBtn}
             <svg width="11" height="11" viewBox="0 0 11 11" fill="none">
               <path
                 d="M2 5.5h7M6.5 3l2.5 2.5L6.5 8"
@@ -316,6 +387,10 @@ function SlideCard({
    MAIN COMPONENT
 ══════════════════════════════════════════════════ */
 export function EHPCarousel() {
+  const params = useParams();
+  const locale = (params?.locale as string) || 'fr';
+  const data = locale === 'en' ? CONTENT.en : CONTENT.fr;
+
   const sectionRef = useRef<HTMLDivElement>(null);
   const isInView   = useInView(sectionRef, { once: true, margin: "-5% 0px" });
   
@@ -348,155 +423,108 @@ export function EHPCarousel() {
       }
     };
     measure();
-    const ro = new ResizeObserver(measure);
-    if (sectionRef.current) ro.observe(sectionRef.current);
-    return () => ro.disconnect();
+    window.addEventListener("resize", measure);
+    return () => window.removeEventListener("resize", measure);
   }, []);
 
-  /* ── Layout constants ── */
-  const heroSlideW   = Math.round(cw * 0.82);
-  const heroSlideH   = Math.max(500, Math.round(vh * 0.85)); // 85vh to leave room
-  const heroGap      = 15;
-  const heroSidePad  = Math.max(0, Math.round((cw - heroSlideW) / 2));
+  const heroSlideW = cw > 0 ? (cw < 640 ? Math.min(cw * 0.90, 480) : Math.min(cw * 0.82, 1080)) : 800;
+  const heroSlideH = vh > 0 ? (cw < 640 ? Math.min(vh * 0.65, 520) : Math.min(vh * 0.72, 620)) : 520;
+  const heroGap    = cw < 640 ? 12 : 20;
+  const heroSidePad = cw > 0 ? Math.max((cw - heroSlideW) / 2, 16) : 24;
 
-  const bottomSlideW  = Math.round((cw - 45) / 3.3);
-  const bottomSlideH  = Math.round(bottomSlideW * 0.60);
-  const bottomGap     = 12;
-  const bottomSidePad = 20;
+  const bottomSlideW = cw > 0 ? (cw < 640 ? 200 : Math.min(cw * 0.22, 280)) : 240;
+  const bottomSlideH = Math.round(bottomSlideW * 0.62);
+  const bottomGap    = cw < 640 ? 10 : 16;
+  const bottomSidePad = heroSidePad;
 
-  // Observer pour détecter le slide actif
+  const scrollHeroTo = useCallback((idx: number) => {
+    const el = heroContainerRef.current;
+    if (!el) return;
+    const targetLeft = idx * (heroSlideW + heroGap);
+    el.scrollTo({ left: targetLeft, behavior: "smooth" });
+  }, [heroSlideW, heroGap]);
+
+  const scrollBottomTo = useCallback((idx: number) => {
+    const el = bottomContainerRef.current;
+    if (!el) return;
+    const targetLeft = idx * (bottomSlideW + bottomGap);
+    el.scrollTo({ left: targetLeft, behavior: "smooth" });
+  }, [bottomSlideW, bottomGap]);
+
+  const clearTimers = useCallback(() => {
+    if (tickRef.current) clearInterval(tickRef.current);
+    if (autoRef.current) clearTimeout(autoRef.current);
+  }, []);
+
+  const startCycle = useCallback((targetIdx: number) => {
+    clearTimers();
+    setProgress(0);
+    const startTime = Date.now();
+
+    tickRef.current = setInterval(() => {
+      if (!playRef.current) return;
+      const elapsed = Date.now() - startTime;
+      const pct = Math.min((elapsed / AUTOPLAY_MS) * 100, 100);
+      setProgress(pct);
+    }, TICK_MS);
+
+    autoRef.current = setTimeout(() => {
+      if (!playRef.current) return;
+      const next = (targetIdx + 1) % data.slides.length;
+      setHeroIdx(next);
+      scrollHeroTo(next);
+      scrollBottomTo(next);
+      startCycle(next);
+    }, AUTOPLAY_MS);
+  }, [clearTimers, scrollHeroTo, scrollBottomTo, data.slides.length]);
+
+  const goTo = useCallback((idx: number) => {
+    setHeroIdx(idx);
+    scrollHeroTo(idx);
+    scrollBottomTo(idx);
+    if (playRef.current) startCycle(idx);
+    else setProgress(0);
+  }, [scrollHeroTo, scrollBottomTo, startCycle]);
+
   useEffect(() => {
-    const container = heroContainerRef.current;
-    if (!container) return;
+    if (cw > 0) {
+      goTo(0);
+    }
+  }, [cw, goTo]);
 
-    const updateActiveIndex = () => {
+  useEffect(() => {
+    const el = heroContainerRef.current;
+    if (!el) return;
+
+    const handleScroll = () => {
       if (scrollTimeoutRef.current) clearTimeout(scrollTimeoutRef.current);
-      
       scrollTimeoutRef.current = setTimeout(() => {
-        const scrollLeft = container.scrollLeft;
-        const containerWidth = container.clientWidth;
-        const slidesContainer = container.children[0] as HTMLElement;
-        if (!slidesContainer) return;
-        
-        const slides = Array.from(slidesContainer.children);
-        
-        for (let i = 0; i < slides.length; i++) {
-          const slide = slides[i] as HTMLElement;
-          const slideLeft = slide.offsetLeft;
-          const slideRight = slideLeft + slide.offsetWidth;
-          const viewportCenter = scrollLeft + containerWidth / 2;
-          
-          if (viewportCenter >= slideLeft && viewportCenter <= slideRight) {
-            if (i !== heroIdx) {
-              setHeroIdx(i);
-              if (playRef.current) {
-                clearTimers();
-                startCycle(i);
-              }
-            }
-            break;
-          }
+        const itemFullW = heroSlideW + heroGap;
+        const currentScroll = el.scrollLeft;
+        const estimatedIdx = Math.round(currentScroll / itemFullW);
+        const clampedIdx = Math.max(0, Math.min(estimatedIdx, data.slides.length - 1));
+
+        if (clampedIdx !== idxRef.current) {
+          setHeroIdx(clampedIdx);
+          scrollBottomTo(clampedIdx);
+          if (playRef.current) startCycle(clampedIdx);
         }
       }, 100);
     };
 
-    container.addEventListener("scroll", updateActiveIndex);
-    updateActiveIndex();
-    
+    el.addEventListener("scroll", handleScroll, { passive: true });
     return () => {
-      container.removeEventListener("scroll", updateActiveIndex);
+      el.removeEventListener("scroll", handleScroll);
       if (scrollTimeoutRef.current) clearTimeout(scrollTimeoutRef.current);
     };
-  }, [heroIdx]);
-
-  const clearTimers = useCallback(() => {
-    if (tickRef.current) { clearInterval(tickRef.current); tickRef.current = null; }
-    if (autoRef.current) { clearTimeout(autoRef.current); autoRef.current = null; }
-  }, []);
-
-  const startCycle = useCallback((idx: number) => {
-    clearTimers();
-    setProgress(0);
-    
-    tickRef.current = setInterval(() => {
-      if (!playRef.current) return;
-      setProgress(p => Math.min(p + (TICK_MS / AUTOPLAY_MS) * 100, 100));
-    }, TICK_MS);
-    
-    autoRef.current = setTimeout(() => {
-      if (!playRef.current) return;
-      const next = (idx + 1) % HERO_SLIDES.length;
-      
-      // Hero scroll
-      const heroContainer = heroContainerRef.current;
-      if (heroContainer) {
-        const heroSlidesContainer = heroContainer.children[0] as HTMLElement;
-        if (heroSlidesContainer && heroSlidesContainer.children[next]) {
-          const targetSlide = heroSlidesContainer.children[next] as HTMLElement;
-          heroContainer.scrollTo({
-            left: targetSlide.offsetLeft,
-            behavior: "smooth"
-          });
-        }
-      }
-      
-      // Bottom cards scroll - MAINTENANT SYNCHRONISÉ
-      const bottomContainer = bottomContainerRef.current;
-      if (bottomContainer) {
-        const bottomSlidesContainer = bottomContainer.children[0] as HTMLElement;
-        if (bottomSlidesContainer && bottomSlidesContainer.children[next]) {
-          const targetBottomSlide = bottomSlidesContainer.children[next] as HTMLElement;
-          bottomContainer.scrollTo({
-            left: targetBottomSlide.offsetLeft,
-            behavior: "smooth"
-          });
-        }
-      }
-      
-      setHeroIdx(next);
-      startCycle(next);
-    }, AUTOPLAY_MS);
-  }, [clearTimers]);
+  }, [heroSlideW, heroGap, scrollBottomTo, startCycle, data.slides.length]);
 
   useEffect(() => {
-    if (cw === 0) return;
-    const t = setTimeout(() => startCycle(0), 500);
-    return () => { clearTimeout(t); clearTimers(); };
-  }, [cw, startCycle]);
-
-  useEffect(() => () => clearTimers(), [clearTimers]);
-
-  const goTo = useCallback((idx: number) => {
-    const heroContainer = heroContainerRef.current;
-    if (heroContainer) {
-      const heroSlidesContainer = heroContainer.children[0] as HTMLElement;
-      if (heroSlidesContainer && heroSlidesContainer.children[idx]) {
-        const targetSlide = heroSlidesContainer.children[idx] as HTMLElement;
-        heroContainer.scrollTo({
-          left: targetSlide.offsetLeft,
-          behavior: "smooth"
-        });
-      }
-    }
-    
-    const bottomContainer = bottomContainerRef.current;
-    if (bottomContainer) {
-      const bottomSlidesContainer = bottomContainer.children[0] as HTMLElement;
-      if (bottomSlidesContainer && bottomSlidesContainer.children[idx]) {
-        const targetBottomSlide = bottomSlidesContainer.children[idx] as HTMLElement;
-        bottomContainer.scrollTo({
-          left: targetBottomSlide.offsetLeft,
-          behavior: "smooth"
-        });
-      }
-    }
-    
-    setHeroIdx(idx);
-    startCycle(idx);
-  }, [startCycle]);
+    return () => clearTimers();
+  }, [clearTimers]);
 
   const togglePlay = useCallback(() => {
-    setPlaying(prev => {
+    setPlaying((prev) => {
       const next = !prev;
       playRef.current = next;
       if (next) startCycle(idxRef.current);
@@ -511,7 +539,6 @@ export function EHPCarousel() {
       className="relative overflow-hidden"
       style={{ background: "#0a0a0a", borderTop: "1px solid rgba(255,255,255,0.05)", paddingBottom: "40px" }}
     >
-
       <motion.div
         initial={{ opacity: 0, y: 18 }}
         animate={isInView ? { opacity: 1, y: 0 } : {}}
@@ -528,7 +555,7 @@ export function EHPCarousel() {
             marginBottom: "10px",
           }}
         >
-          Ethical Hacker Prep
+          {data.headlinePre}
         </p>
 
         <h2
@@ -541,9 +568,9 @@ export function EHPCarousel() {
             color: "#ffffff",
           }}
         >
-          Maîtrisez la Cybersécurité.
+          {data.headlineMain}
           <br />
-          <span style={{ color: "rgba(255,255,255,0.4)" }}>Défendez comme un pro.</span>
+          <span style={{ color: "rgba(255,255,255,0.4)" }}>{data.headlineSub}</span>
         </h2>
       </motion.div>
 
@@ -568,7 +595,7 @@ export function EHPCarousel() {
             paddingRight: `${heroSidePad}px`,
           }}
         >
-          {HERO_SLIDES.map((slide, idx) => (
+          {data.slides.map((slide, idx) => (
             <div
               key={slide.id}
               style={{
@@ -583,6 +610,8 @@ export function EHPCarousel() {
                 slideH={heroSlideH}
                 progress={heroIdx === idx ? progress : 0}
                 priority={idx <= 1}
+                discoverBtn={data.discoverBtn}
+                learnMoreBtn={data.learnMoreBtn}
                 onClick={(e) => {
                   if (isHeroDragging) {
                     e.preventDefault();
@@ -623,7 +652,7 @@ export function EHPCarousel() {
               paddingRight: `${bottomSidePad}px`,
             }}
           >
-            {BOTTOM_CARDS.map((card, idx) => (
+            {data.bottomCards.map((card, idx) => (
               <div
                 key={card.id}
                 style={{
@@ -648,34 +677,32 @@ export function EHPCarousel() {
                     overflow: "hidden",
                     position: "relative",
                     display: "block",
-                    background: "#111",
-                    textDecoration: "none",
+                    opacity: heroIdx === idx ? 1 : 0.45,
+                    transform: heroIdx === idx ? "scale(1.02)" : "scale(1)",
+                    transition: "opacity 0.3s ease, transform 0.3s ease",
+                    border: heroIdx === idx ? "1px solid rgba(201,169,110,0.4)" : "1px solid rgba(255,255,255,0.06)",
                   }}
                 >
                   <img
                     src={card.image}
                     alt={card.title}
-                    loading="lazy"
                     draggable={false}
+                    loading="lazy"
                     style={{
                       position: "absolute",
                       inset: 0,
                       width: "100%",
                       height: "100%",
                       objectFit: "cover",
-                      pointerEvents: "none",
                     }}
                   />
-
                   <div
                     style={{
                       position: "absolute",
                       inset: 0,
-                      background: "linear-gradient(180deg, transparent 35%, rgba(0,0,0,0.9) 100%)",
-                      zIndex: 10,
+                      background: "linear-gradient(180deg, rgba(0,0,0,0.1) 0%, rgba(10,10,10,0.85) 100%)",
                     }}
                   />
-
                   <div
                     style={{
                       position: "absolute",
@@ -729,7 +756,7 @@ export function EHPCarousel() {
           marginTop: "0px",
         }}
       >
-        {HERO_SLIDES.map((_, i) => (
+        {data.slides.map((_, i) => (
           <button
             key={i}
             onClick={() => goTo(i)}
@@ -764,7 +791,7 @@ export function EHPCarousel() {
 
         <button
           onClick={togglePlay}
-          aria-label={playing ? "Pause" : "Lecture"}
+          aria-label={playing ? data.pauseLabel : data.playLabel}
           style={{
             marginLeft: "8px",
             width: "28px",
