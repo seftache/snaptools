@@ -16,8 +16,8 @@ export default function EmailSignatureWidget({ locale }: { locale: string }) {
   const [jobTitle, setJobTitle] = useState('Directeur Général');
   const [company, setCompany] = useState('SnapTools Inc.');
   const [phone, setPhone] = useState('+33 6 12 34 56 78');
-  const [email, setEmail] = useState('alexandre@snaptools.co');
-  const [website, setWebsite] = useState('https://snaptools.co');
+  const [email, setEmail] = useState('alexandre@snaptools.store');
+  const [website, setWebsite] = useState('https://snaptools.store');
   const [address, setAddress] = useState('Paris, France');
   const [avatarUrl, setAvatarUrl] = useState('https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150&auto=format&fit=crop&q=80');
 

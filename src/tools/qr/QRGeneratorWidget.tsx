@@ -16,7 +16,7 @@ export default function QRGeneratorWidget({ locale }: { locale: string }) {
   const [activeType, setActiveType] = useState<QRType>('url');
 
   // Form Fields
-  const [urlInput, setUrlInput] = useState('https://snaptools.co');
+  const [urlInput, setUrlInput] = useState('https://snaptools.store');
   const [textInput, setTextInput] = useState('Bienvenue sur SnapTools !');
   
   // WiFi
@@ -39,7 +39,7 @@ export default function QRGeneratorWidget({ locale }: { locale: string }) {
   const [waMessage, setWaMessage] = useState('Bonjour ! Je vous contacte depuis votre QR Code.');
 
   // Email
-  const [emailTo, setEmailTo] = useState('contact@snaptools.co');
+  const [emailTo, setEmailTo] = useState('contact@snaptools.store');
   const [emailSubject, setEmailSubject] = useState('Demande de renseignements');
   const [emailBody, setEmailBody] = useState('Bonjour, je souhaite obtenir des informations.');
 

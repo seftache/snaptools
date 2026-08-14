@@ -331,7 +331,7 @@ export default function PassportPhotoWidget({ locale }: { locale: string }) {
         sCtx.fillStyle = '#94a3b8';
         sCtx.font = '16px sans-serif';
         sCtx.fillText(
-          `SnapTools.co • Format: ${FORMATS[format].nameFr} • Papier Photo 10x15 cm (300 DPI)`,
+          `SnapTools.store • Format: ${FORMATS[format].nameFr} • Papier Photo 10x15 cm (300 DPI)`,
           60,
           sheetH - 30
         );

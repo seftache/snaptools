@@ -60,7 +60,7 @@ function TermsEN() {
         <p>The SnapTools name, logo, design, and codebase are owned by the SnapTools team. The output of our tools belongs to you.</p>
 
         <h2 className="text-[var(--text-primary)] text-xl font-semibold mt-8">6. Copyright / DMCA</h2>
-        <p>If you believe that content accessible through SnapTools infringes your copyright, please contact us at: dmca@snaptools.co. We will promptly investigate and take appropriate action in accordance with the Digital Millennium Copyright Act (DMCA).</p>
+        <p>If you believe that content accessible through SnapTools infringes your copyright, please contact us at: dmca@snaptools.store. We will promptly investigate and take appropriate action in accordance with the Digital Millennium Copyright Act (DMCA).</p>
 
         <h2 className="text-[var(--text-primary)] text-xl font-semibold mt-8">7. Limitation of Liability</h2>
         <p>In no event shall SnapTools, its team, or affiliates be liable for any direct, indirect, incidental, special, or consequential damages arising from your use of our services.</p>
@@ -75,7 +75,7 @@ function TermsEN() {
         <p>SnapTools is part of the SnapTools network, built and maintained by the team behind <a href="https://ethicalhackerprep.com" target="_blank" rel="noopener noreferrer" className="text-[var(--accent-devsec)] hover:underline">Ethical Hacker Prep</a>.</p>
 
         <h2 className="text-[var(--text-primary)] text-xl font-semibold mt-8">11. Contact</h2>
-        <p>For questions about these terms: legal@snaptools.co</p>
+        <p>For questions about these terms: legal@snaptools.store</p>
       </div>
     </main>
   );
@@ -111,7 +111,7 @@ function TermsFR() {
         <p>Le nom SnapTools, le logo, le design et le code source sont la propriété de l&apos;équipe SnapTools. Les résultats générés par nos outils vous appartiennent.</p>
 
         <h2 className="text-[var(--text-primary)] text-xl font-semibold mt-8">6. Droit d&apos;auteur / DMCA</h2>
-        <p>Si vous estimez qu&apos;un contenu accessible via SnapTools porte atteinte à vos droits d&apos;auteur, contactez-nous à : dmca@snaptools.co. Nous procéderons rapidement à une enquête et prendrons les mesures appropriées.</p>
+        <p>Si vous estimez qu&apos;un contenu accessible via SnapTools porte atteinte à vos droits d&apos;auteur, contactez-nous à : dmca@snaptools.store. Nous procéderons rapidement à une enquête et prendrons les mesures appropriées.</p>
 
         <h2 className="text-[var(--text-primary)] text-xl font-semibold mt-8">7. Limitation de responsabilité</h2>
         <p>En aucun cas SnapTools, son équipe ou ses affiliés ne pourront être tenus responsables de tout dommage direct, indirect, accessoire, spécial ou consécutif découlant de votre utilisation de nos services.</p>
@@ -126,7 +126,7 @@ function TermsFR() {
         <p>SnapTools fait partie du réseau SnapTools, conçu et maintenu par l&apos;équipe d&apos;<a href="https://ethicalhackerprep.com" target="_blank" rel="noopener noreferrer" className="text-[var(--accent-devsec)] hover:underline">Ethical Hacker Prep</a>.</p>
 
         <h2 className="text-[var(--text-primary)] text-xl font-semibold mt-8">11. Contact</h2>
-        <p>Pour toute question : legal@snaptools.co</p>
+        <p>Pour toute question : legal@snaptools.store</p>
       </div>
     </main>
   );

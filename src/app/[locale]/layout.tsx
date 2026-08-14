@@ -109,7 +109,7 @@ export default async function RootLayout({
   setRequestLocale(locale);
 
   const messages = await getMessages();
-  const domain = process.env.NEXT_PUBLIC_ROOT_DOMAIN || 'snaptools.co';
+  const domain = process.env.NEXT_PUBLIC_ROOT_DOMAIN || 'snaptools.store';
 
   // Schema.org Global Organization & WebSite Structured Data
   const globalSchema = [

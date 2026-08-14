@@ -1,7 +1,7 @@
 export const siteConfig = {
   name: 'SnapTools',
-  domain: process.env.NEXT_PUBLIC_ROOT_DOMAIN || 'snaptools.co',
-  url: `https://${process.env.NEXT_PUBLIC_ROOT_DOMAIN || 'snaptools.co'}`,
+  domain: process.env.NEXT_PUBLIC_ROOT_DOMAIN || 'snaptools.store',
+  url: `https://${process.env.NEXT_PUBLIC_ROOT_DOMAIN || 'snaptools.store'}`,
   ehpUrl: 'https://ethicalhackerprep.com',
   ehpName: 'Ethical Hacker Prep',
   description: { 

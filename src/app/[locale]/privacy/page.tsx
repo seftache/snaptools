@@ -58,7 +58,7 @@ function PrivacyEN() {
         <p>Our services are not directed to children under 13. We do not knowingly collect information from children.</p>
 
         <h2 className="text-[var(--text-primary)] text-xl font-semibold mt-8">7. Contact</h2>
-        <p>For privacy-related questions, contact us at: privacy@snaptools.co</p>
+        <p>For privacy-related questions, contact us at: privacy@snaptools.store</p>
 
         <h2 className="text-[var(--text-primary)] text-xl font-semibold mt-8">8. Disclosure</h2>
         <p>SnapTools is part of the SnapTools network, built and maintained by the team behind <a href="https://ethicalhackerprep.com" target="_blank" rel="noopener noreferrer" className="text-[var(--accent-devsec)] hover:underline">Ethical Hacker Prep</a>.</p>
@@ -95,7 +95,7 @@ function PrivacyFR() {
         <p>Nos services ne s&apos;adressent pas aux enfants de moins de 13 ans. Nous ne collectons pas sciemment d&apos;informations les concernant.</p>
 
         <h2 className="text-[var(--text-primary)] text-xl font-semibold mt-8">7. Contact</h2>
-        <p>Pour toute question relative à la confidentialité : privacy@snaptools.co</p>
+        <p>Pour toute question relative à la confidentialité : privacy@snaptools.store</p>
 
         <h2 className="text-[var(--text-primary)] text-xl font-semibold mt-8">8. Mention légale</h2>
         <p>SnapTools fait partie du réseau SnapTools, conçu et maintenu par l&apos;équipe d&apos;<a href="https://ethicalhackerprep.com" target="_blank" rel="noopener noreferrer" className="text-[var(--accent-devsec)] hover:underline">Ethical Hacker Prep</a>.</p>
