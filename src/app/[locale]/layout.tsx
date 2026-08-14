@@ -72,6 +72,16 @@ export async function generateMetadata({
     twitter: {
       card: 'summary_large_image',
     },
+    icons: {
+      icon: [
+        { url: '/icon.svg', type: 'image/svg+xml' },
+        { url: '/favicon.svg', type: 'image/svg+xml' },
+      ],
+      apple: [
+        { url: '/icon.svg', sizes: '180x180', type: 'image/svg+xml' },
+      ],
+      shortcut: '/icon.svg',
+    },
     robots: {
       index: true,
       follow: true,
@@ -151,6 +161,9 @@ export default async function RootLayout({
             dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
           />
         ))}
+        <link rel="icon" href="/icon.svg" type="image/svg+xml" />
+        <link rel="alternate icon" href="/favicon.svg" type="image/svg+xml" />
+        <link rel="apple-touch-icon" href="/icon.svg" />
       </head>
       <body className="antialiased min-h-screen flex flex-col" style={{ backgroundColor: '#0a0a0a', color: '#e0e0e0', fontFamily: 'Inter, -apple-system, system-ui, sans-serif' }} suppressHydrationWarning>
         <NextIntlClientProvider messages={messages}>
