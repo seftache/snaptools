@@ -55,7 +55,7 @@ export async function generateMetadata({
       template: `%s | SnapTools`,
     },
     description: descriptions[locale] || descriptions.en,
-    metadataBase: new URL(`https://${process.env.NEXT_PUBLIC_ROOT_DOMAIN || 'snaptools.co'}`),
+    metadataBase: new URL(`https://${process.env.NEXT_PUBLIC_ROOT_DOMAIN || 'snaptools.store'}`),
     alternates: {
       canonical: `/${locale}`,
       languages: {

@@ -3,7 +3,7 @@ import { routing } from '@/i18n/routing';
 import type { MetadataRoute } from 'next';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const domain = process.env.NEXT_PUBLIC_ROOT_DOMAIN || 'snaptools.co';
+  const domain = process.env.NEXT_PUBLIC_ROOT_DOMAIN || 'snaptools.store';
   const baseUrl = `https://${domain}`;
   const tools = getAllTools();
   const locales = routing.locales;

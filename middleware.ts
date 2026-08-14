@@ -4,7 +4,7 @@ import { routing } from '@/i18n/routing';
 
 const intlMiddleware = createMiddleware(routing);
 
-const ROOT_DOMAIN = process.env.NEXT_PUBLIC_ROOT_DOMAIN || 'snaptools.co';
+const ROOT_DOMAIN = process.env.NEXT_PUBLIC_ROOT_DOMAIN || 'snaptools.store';
 const ROUTING_MODE = (process.env.ROUTING_MODE || 'subfolder') as 'subdomain' | 'subfolder';
 
 /**
